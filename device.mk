@@ -140,7 +140,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.a32
+    android.hardware.light-service.a22
 
 # Media
 PRODUCT_PACKAGES += \
@@ -177,6 +177,9 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
+
+PRODUCT_PACKAGES += \
+    TetheringConfigOverlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
