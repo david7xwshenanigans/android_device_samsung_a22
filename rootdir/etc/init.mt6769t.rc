@@ -25,8 +25,6 @@ on early-init
 
 on init
     write /proc/bootprof "INIT:init"
-    # Support legacy paths
-    symlink /sdcard /mnt/sdcard
 
     # Param
     symlink /dev/block/by-name/param /dev/block/param
@@ -34,8 +32,6 @@ on init
     symlink /dev/block/by-name/persistent /dev/block/persistent
     # if primary storage is physical, set ro.vold.primary_physical to 1
     # setprop ro.vold.primary_physical 1
-
-    mkdir /mnt/cd-rom 0000 system system
 
 # change lk_env permission
     chown root system /proc/lk_env
@@ -149,9 +145,6 @@ on post-fs
     write /proc/perfmgr/boost_ctrl/eas_ctrl/boot_boost "2 100"
     write /proc/perfmgr/boost_ctrl/eas_ctrl/boot_boost "3 100"
     write /proc/perfmgr/boost_ctrl/eas_ctrl/sched_stune_task_thresh 0
-
-    # Support legacy paths
-    symlink /sdcard /storage/sdcard0
 
     #change permissions for mediaserver
     chown root media /proc/clkmgr/mipi_test
