@@ -32,6 +32,11 @@ ro.vendor.system.mtk_mapi_support=1
 # Identity
 Build.BRAND=MTK
 
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+
 # Kernel
 ro.kernel.qemu=0
 ro.kernel.zio=38,108,105,16
