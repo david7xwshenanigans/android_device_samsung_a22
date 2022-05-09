@@ -11,6 +11,9 @@ ro.audio.usb.period_us=16000
 # Camera
 ro.camera.sound.forced=0
 
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
 # Disable iorapd
 ro.iorapd.enable=false
 
