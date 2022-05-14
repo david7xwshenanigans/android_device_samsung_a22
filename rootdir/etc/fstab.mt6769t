@@ -112,4 +112,4 @@ odm /odm ext4 ro wait,,avb,logical,first_stage_mount
 
 /dev/block/platform/bootdevice/by-name/uh /uh emmc defaults defaults
 
-/dev/block/zram0 none swap defaults zramsize=55%
+/dev/block/zram0 none swap defaults zramsize=55%,max_comp_streams=8
