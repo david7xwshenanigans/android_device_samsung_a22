@@ -479,4 +479,7 @@
          the value set for config_defaultPeakRefreshRate will act as the default peak frame rate -->
     <integer name="config_defaultRefreshRate">0</integer>
 
+    <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
+    <bool name="config_zramWriteback">true</bool>
+
 </resources>
