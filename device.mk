@@ -22,7 +22,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@2.0-impl \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.effect@7.0-impl \
-    android.hardware.audio.service \
+    android.hardware.audio.service.mediatek \
     libaudioclient_aidl_conversion \
     libaudiofoundation.vendor \
     libbluetooth_audio_session \
