@@ -1758,17 +1758,13 @@ vendor/etc/.tp/thermal.off.conf
 vendor/etc/init/init.thermal_manager.rc
 vendor/etc/btcon.json
 vendor/etc/fstb.cfg
-vendor/lib/hw/android.hardware.thermal@1.0-impl.so
 vendor/lib/hw/android.hardware.thermal@2.0-impl.so
 vendor/lib/hw/thermal_hal.so
 vendor/lib/android.hardware.thermal@1.0.so
-vendor/lib/android.hardware.thermal@2.0.so
 vendor/lib/libmtcloader.so
-vendor/lib64/hw/android.hardware.thermal@1.0-impl.so
 vendor/lib64/hw/android.hardware.thermal@2.0-impl.so
 vendor/lib64/hw/thermal_hal.so
 vendor/lib64/android.hardware.thermal@1.0.so
-vendor/lib64/android.hardware.thermal@2.0.so
 vendor/lib64/libmtcloader.so
 
 # Thermal (samsung)

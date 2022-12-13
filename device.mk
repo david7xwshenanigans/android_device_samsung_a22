@@ -147,7 +147,7 @@ PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.2.vendor \
     libavservices_minijail_vendor \
     libcodec2_hidl@1.2.vendor \
-    libcodec2_soft_common.vendor
+    libcodec2_soft_common.vendor \
     libsfplugin_ccodec_utils.vendor \
     libstagefright_softomx_plugin.vendor
 
@@ -264,6 +264,11 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0-impl \
+    android.hardware.thermal@2.0.vendor
 
 # USB
 PRODUCT_PACKAGES += \
