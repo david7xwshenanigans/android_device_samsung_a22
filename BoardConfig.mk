@@ -63,6 +63,9 @@ TARGET_KERNEL_CLANG_PATH := $(abspath .)/prebuilts/clang/kernel/$(HOST_PREBUILT_
 # Platform
 TARGET_BOARD_PLATFORM := mt6768
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # SPL
 VENDOR_SECURITY_PATCH := 2023-11-01
 
