@@ -1231,6 +1231,7 @@ vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
 vendor/bin/vpud
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
 vendor/etc/init/vpud.rc
+vendor/lib/libcodec2_vndk.so:vendor/lib/libcodec2_vndk-mtk.so
 vendor/lib/vndk/libstagefright_xmlparser.so
 vendor/lib/AVCSecureVdecCA.so
 vendor/lib/AVCSecureVencCA.so
@@ -1246,7 +1247,6 @@ vendor/lib/libcodec2_mtk_venc.so
 vendor/lib/libcodec2_soft_mtk_imaadpcmdec.so
 vendor/lib/libcodec2_soft_mtk_mp3dec.so
 vendor/lib/libcodec2_soft_mtk_msadpcmdec.so
-vendor/lib/libcodec2_vndk.so
 vendor/lib/libcodec2_vpp_qt_plugin.so
 vendor/lib/libcodec2_vpp_rs_plugin.so
 vendor/lib/libcodecsolutionhelper_vendor.so
@@ -1275,6 +1275,7 @@ vendor/lib/libvp8enc_sa.ca7.so
 vendor/lib/libvp9dec_sa.ca7.so
 vendor/lib/libvpu5.so
 vendor/lib/libvpud_vcodec.so
+vendor/lib64/libcodec2_vndk.so:vendor/lib64/libcodec2_vndk-mtk.so
 vendor/lib64/AVCSecureVdecCA.so
 vendor/lib64/AVCSecureVencCA.so
 vendor/lib64/VP9SecureVdecCA.so
@@ -1301,7 +1302,6 @@ vendor/lib64/libcodec2_soft_eac3dec.so
 vendor/lib64/libcodec2_soft_mtk_imaadpcmdec.so
 vendor/lib64/libcodec2_soft_mtk_mp3dec.so
 vendor/lib64/libcodec2_soft_mtk_msadpcmdec.so
-vendor/lib64/libcodec2_vndk.so
 vendor/lib64/libcodec2_vpp_qt_plugin.so
 vendor/lib64/libcodec2_vpp_rs_plugin.so
 vendor/lib64/libcodecsolutionhelper_vendor.so
