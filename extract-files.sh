@@ -59,6 +59,7 @@ function blob_fixup {
             ;&
         vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
            "${PATCHELF}" --replace-needed "libcodec2_vndk.so" "libcodec2_vndk-mtk.so" "${2}"
+           "${PATCHELF}" --replace-needed "libcodec2_hidl@1.0.so" "libcodec2_hidl-mtk@1.0.so" "${2}"
             ;;
         vendor/bin/hw/android.hardware.sensors@2.0-service.multihal)
             "$PATCHELF" --replace-needed libutils.so libutils-v32.so "$2"
