@@ -7,6 +7,7 @@ persist.sys.fuse.passthrough.enable=true
 ro.audio.silent=0
 ro.audio.spatializer_enabled=true
 ro.audio.usb.period_us=16000
+ro.config.vc_call_vol_steps=15
 
 # Camera
 ro.camera.sound.forced=0
