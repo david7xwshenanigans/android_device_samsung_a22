@@ -21,6 +21,7 @@ ro.iorapd.enable=false
 ro.opengles.version=196610
 ro.zygote.preload.enable=0
 sys.hqm.support=true
+zygote.critical_window.minute=10
 
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
