@@ -430,16 +430,6 @@
         </interface>
         <fqname>@1.1::INvram/default</fqname>
     </hal>
-    <hal format="hidl">
-        <name>vendor.mediatek.hardware.nwk_opt</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>INwkOpt</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::INwkOpt/default</fqname>
-    </hal>
     <hal format="hidl" override="true">
         <name>vendor.mediatek.hardware.videotelephony</name>
         <transport>hwbinder</transport>

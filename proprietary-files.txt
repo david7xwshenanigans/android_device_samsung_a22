@@ -1282,15 +1282,6 @@ vendor/lib64/libnvram_sec.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 
-# Nwk_opt
-vendor/bin/hw/vendor.mediatek.hardware.nwk_opt@1.0-service
-vendor/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc
-vendor/lib/libnwk_opt_halwrap_vendor.so
-vendor/lib/vendor.mediatek.hardware.nwk_opt@1.0.so
-vendor/lib64/libnwk_opt_halwrap_vendor.so
-vendor/lib64/nwk_opt_imp.so
-vendor/lib64/vendor.mediatek.hardware.nwk_opt@1.0.so
-
 # Power
 vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
 vendor/etc/init/bootperf.rc
