@@ -64,17 +64,11 @@ function blob_fixup {
         vendor/bin/hw/android.hardware.sensors@2.0-service.multihal)
             "$PATCHELF" --replace-needed libutils.so libutils-v32.so "$2"
             ;;
-        vendor/bin/hw/android.hardware.wifi@1.0-service-lazy | vendor/bin/hw/vendor.samsung.hardware.wifi@2.0-service)
-            "$PATCHELF" --replace-needed "libwifi-hal.so" "libwifi-hal-mtk.so" "${2}"
-            ;;
         vendor/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service_64)
             "$PATCHELF" --replace-needed libutils.so libutils-v31.so "$2"
             ;;
         vendor/bin/hw/vendor.samsung.hardware.hyper-service)
             "$PATCHELF" --replace-needed liblog.so liblog-v31.so "${2}"
-            ;;
-        vendor/lib64/libwifi-hal-mtk.so)
-            "$PATCHELF" --set-soname libwifi-hal-mtk.so "${2}"
             ;;
     esac
 }
