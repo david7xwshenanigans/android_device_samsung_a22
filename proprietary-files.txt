@@ -1761,7 +1761,6 @@ vendor/etc/plmn_delta_attaio.bin
 vendor/etc/plmn_delta_hktw.bin
 vendor/etc/plmn_delta_usagsm.bin
 vendor/etc/plmn_se13.bin
-vendor/etc/task_profiles.json
 vendor/etc/traceconfig.txt
 vendor/etc/vramdiskd.xml
 vendor/lib/audio_common-aidl-cpp.so
