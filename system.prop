@@ -12,6 +12,9 @@ ro.config.vc_call_vol_steps=15
 # Camera
 ro.camera.sound.forced=0
 
+# Charger
+ro.charger.enable_suspend=true
+
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
 
