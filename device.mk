@@ -291,6 +291,7 @@ PRODUCT_PACKAGES += \
     init.recovery.mt6768.rc \
     init.recovery.mt6769t.rc \
     init.recovery.samsung.rc \
+    init.target.rc \
     meta_init.connectivity.common.rc \
     meta_init.connectivity.rc \
     meta_init.modem.rc \

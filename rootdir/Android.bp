@@ -106,6 +106,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.target.rc",
+    src: "etc/init.target.rc",
+    sub_dir: "init",
+    system_ext_specific: true,
+}
+
+prebuilt_etc {
     name: "init_connectivity.rc",
     src: "etc/init_connectivity.rc",
     sub_dir: "init/hw",
