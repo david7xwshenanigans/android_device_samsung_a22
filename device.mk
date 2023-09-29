@@ -175,6 +175,9 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # Overlays
+EVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
+
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Power
