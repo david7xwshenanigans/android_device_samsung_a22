@@ -342,4 +342,6 @@
          and Strength as defined in Authenticators.java -->
     <string-array name="config_biometric_sensors">
         <item>0:2:15</item>
+    </string-array>
+
 </resources>
