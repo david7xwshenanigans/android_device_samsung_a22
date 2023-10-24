@@ -6,14 +6,14 @@
 # I am S vendor meta_init.rc
 import /vendor/etc/init/hw/init.aee.rc
 import /vendor/etc/init/trustonic.rc
-import ${ro.vendor.rc}meta_init.connectivity.rc
+import /vendor/etc/init/hw/meta_init.connectivity.rc
 import /vendor/etc/init/hw/meta_init.project.rc
 import /vendor/etc/init/microtrust.rc
 import /vendor/etc/init/teegris.rc
 import /vendor/etc/init/android.hardware.boot@1.2-service-lazy.rc
 import /vendor/etc/init/android.hardware.boot@1.2-service.rc
 
-#import ${ro.vendor.rc}multi_init.rc
+#import /vendor/etc/init/hw/multi_init.rc
 #phase out multi_init.rc, move related vendor rc to here.
 #start
 import /vendor/etc/init/aee_aedv.rc
@@ -54,7 +54,7 @@ import /vendor/etc/init/microtrust.init_thh.rc
 #end
 
 #Make sure meta_init.modem.rc is the last rc file.
-import ${ro.vendor.rc}meta_init.modem.rc
+import /vendor/etc/init/hw/meta_init.modem.rc
 
 on early-init
     write /proc/bootprof "INIT:early-init"
