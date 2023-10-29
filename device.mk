@@ -100,6 +100,7 @@ PRODUCT_PACKAGES += \
     libdrm.vendor\
     libdrmclearkeyplugin \
     libmockdrmcryptoplugin \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat \
     libz_stable.vendor
 
 # Dumpstate
