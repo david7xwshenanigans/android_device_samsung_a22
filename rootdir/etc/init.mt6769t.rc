@@ -265,6 +265,10 @@ on post-fs-data
     chown root system /data/vendor/flicker
     chmod 0771 /data/vendor/flicker
 
+    # Create Audio HAL data directory
+    mkdir /data/vendor/audiohal 0771 system audio
+    mkdir /data/vendor/audiohal/audio_param 0771 system audio
+
     #Add /mnt/vendor/efs mount point
     chown radio system /mnt/vendor/efs
     chmod 0771 /mnt/vendor/efs
