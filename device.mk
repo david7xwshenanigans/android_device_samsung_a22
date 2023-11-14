@@ -38,9 +38,6 @@ PRODUCT_PACKAGES += \
     libnbaio_mono
 
 PRODUCT_PACKAGES += \
-    libstagefright_bufferpool@2.0.1.vendor
-
-PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.0-impl \
     android.hardware.soundtrigger@2.3.vendor
 
