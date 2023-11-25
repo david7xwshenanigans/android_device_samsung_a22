@@ -45,6 +45,7 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3.vendor
 
 PRODUCT_PACKAGES += \
+    BesLoudness \
     MtkInCallService
 
 PRODUCT_COPY_FILES += \
