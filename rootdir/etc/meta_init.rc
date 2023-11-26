@@ -4,7 +4,6 @@
 # This is a common source of Android security bugs.
 #
 # I am S vendor meta_init.rc
-import /vendor/etc/init/hw/init.aee.rc
 import /vendor/etc/init/trustonic.rc
 import /vendor/etc/init/hw/meta_init.connectivity.rc
 import /vendor/etc/init/hw/meta_init.project.rc

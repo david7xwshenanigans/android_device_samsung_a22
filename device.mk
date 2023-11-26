@@ -307,7 +307,6 @@ PRODUCT_PACKAGES += \
     factory_init.rc \
     fstab.mt6768 \
     fstab.mt6769t \
-    init.aee.rc \
     init.ago.rc \
     init.cgroup.rc \
     init.connectivity.common.rc \
