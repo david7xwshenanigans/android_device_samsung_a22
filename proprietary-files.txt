@@ -888,11 +888,7 @@ vendor/etc/init/chipinfo_init.rc
 
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
-vendor/bin/hw/android.hardware.graphics.composer@2.1-service
-vendor/bin/hw/android.hardware.memtrack@1.0-service
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
-vendor/etc/init/android.hardware.graphics.composer@2.1-service.rc
-vendor/etc/init/android.hardware.memtrack@1.0-service.rc
 vendor/lib/egl/egl.cfg
 vendor/lib/egl/libGLES_mali.so
 vendor/lib/egl/libGLES_meow.so
@@ -902,7 +898,6 @@ vendor/lib/egl/libMEOW_qt.so
 vendor/lib/egl/libMEOW_trace.so
 vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
-vendor/lib/hw/android.hardware.memtrack@1.0-impl.so
 vendor/lib/hw/gralloc.default.so
 vendor/lib/hw/memtrack.default.so
 vendor/lib/hw/vulkan.mt6768.so
@@ -925,7 +920,6 @@ vendor/lib/libgralloc_extra.so
 vendor/lib/libgralloc_helper.unifunc.so
 vendor/lib/libgralloc_metadata.so
 vendor/lib/libgralloctypes_mtk.so
-vendor/lib/libgrallocusage.so
 vendor/lib/libion_mtk.so
 vendor/lib/libion_ulit.so
 vendor/lib/libmtk_drvb.so
@@ -940,7 +934,6 @@ vendor/lib64/egl/libMEOW_qt.so
 vendor/lib64/egl/libMEOW_trace.so
 vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
-vendor/lib64/hw/android.hardware.memtrack@1.0-impl.so
 vendor/lib64/hw/gralloc.default.so
 vendor/lib64/hw/hwcomposer.mt6768.so
 vendor/lib64/hw/memtrack.default.so
@@ -949,8 +942,6 @@ vendor/lib64/mt6768/libdpframework.so
 vendor/lib64/mt6768/libmtk_drvb.so
 vendor/lib64/mt6768/libnir_neon_driver.so
 vendor/lib64/mt6768/libpq_prot.so
-vendor/lib64/android.hardware.graphics.composer@2.1-resources.so
-vendor/lib64/android.hardware.graphics.composer@2.1.so
 vendor/lib64/arm.graphics-V1-ndk_platform.so
 vendor/lib64/libDefaultFpsActor.so
 vendor/lib64/libFrameRecord.so
@@ -966,7 +957,6 @@ vendor/lib64/libgralloc_extra.so
 vendor/lib64/libgralloc_helper.unifunc.so
 vendor/lib64/libgralloc_metadata.so
 vendor/lib64/libgralloctypes_mtk.so
-vendor/lib64/libgrallocusage.so
 vendor/lib64/libion_mtk.so
 vendor/lib64/libion_ulit.so
 vendor/lib64/libmml.so

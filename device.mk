@@ -19,6 +19,23 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.cas@1.2-service-lazy
 
+# Display
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@2.0.vendor \
+    android.hardware.graphics.allocator@4.0.vendor \
+    android.hardware.graphics.common@1.2.vendor \
+    android.hardware.graphics.composer@2.1-service \
+    android.hardware.graphics.mapper@2.1.vendor \
+    android.hardware.graphics.mapper@3.0.vendor \
+    android.hardware.graphics.mapper@4.0.vendor
+
+PRODUCT_PACKAGES += \
+    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-service
+
+PRODUCT_PACKAGES += \
+    libgrallocusage.vendor
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey \
