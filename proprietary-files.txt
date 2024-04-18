@@ -1034,10 +1034,6 @@ vendor/lib64/android.hardware.drm@1.4.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
 
-# Dumstate
-vendor/lib64/android.hardware.dumpstate@1.0.so
-vendor/lib64/android.hardware.dumpstate@1.1.so
-
 # Engineermode
 vendor/bin/emservice
 vendor/bin/vendor.samsung.hardware.security.engmode@1.0-service

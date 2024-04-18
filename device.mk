@@ -14,6 +14,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 PRODUCT_PACKAGES += \
     android.hardware.cas@1.2-service-lazy
 
+# Dumpstate
+PRODUCT_PACKAGES += \
+    android.hardware.dumpstate@1.1.vendor:64
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
