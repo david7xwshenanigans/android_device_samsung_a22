@@ -26,7 +26,7 @@ TARGET_BOOTLOADER_BOARD_NAME := a22
 TARGET_NO_BOOTLOADER := true
 
 # Platform
-TARGET_BOARD_PLATFORM := mt6765
+TARGET_BOARD_PLATFORM := mt6768
 
 # Inherit the proprietary files
 include vendor/samsung/a22/BoardConfigVendor.mk
