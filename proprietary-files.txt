@@ -1049,33 +1049,25 @@ vendor/lib64/libstork_shared.so
 vendor/lib64/vendor.samsung.hardware.security.engmode@1.0.so
 
 # Fingerprint
-vendor/bin/hw/vendor.samsung.hardware.biometrics.face-service
 vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@3.0-service
 vendor/etc/init/fingerprint_common.rc
 vendor/etc/init/init.fingerprint.rc
 vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.xml
 vendor/lib/hw/fingerprint.default.so
-vendor/lib/android.hardware.biometrics.common-V1-ndk_platform.so
-vendor/lib/android.hardware.biometrics.face-V1-ndk_platform.so
 vendor/lib/libbauthserver.so
 vendor/lib/libbauthtzcommon.so
 vendor/lib/libegis_fp_normal_sensor_test.so
 vendor/lib/libgf_in_system_lib.so
 vendor/lib/libqfp_sensortest.so
 vendor/lib/libsynaFpSensorTestNwd.so
-vendor/lib/vendor.samsung.hardware.biometrics.face-V2-ndk_platform.so
 vendor/lib64/hw/fingerprint.default.so
-vendor/lib64/android.hardware.biometrics.common-V1-ndk_platform.so
-vendor/lib64/android.hardware.biometrics.face-V1-ndk_platform.so
-vendor/lib64/android.hardware.biometrics.fingerprint@2.1.so
 vendor/lib64/libbauthserver.so
 vendor/lib64/libbauthtzcommon.so
 vendor/lib64/libegis_fp_normal_sensor_test.so
 vendor/lib64/libgf_in_system_lib.so
 vendor/lib64/libqfp_sensortest.so
 vendor/lib64/libsynaFpSensorTestNwd.so
-vendor/lib64/vendor.samsung.hardware.biometrics.face-V2-ndk_platform.so
 vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint@3.0.so
 
 # Firmware
@@ -2083,7 +2075,6 @@ vendor/bin/test_model.json
 vendor/bin/wvkprov
 vendor/etc/init/cass.rc
 vendor/etc/init/dsmsca.rc
-vendor/etc/init/face-default-sec.rc
 vendor/etc/init/init.a22.rc
 vendor/etc/init/init.fpsgo.rc
 vendor/etc/init/init.ramplus.rc
@@ -2125,7 +2116,6 @@ vendor/etc/vramdiskd.xml
 vendor/lib/audio_common-aidl-cpp.so
 vendor/lib/audioclient-types-aidl-cpp.so
 vendor/lib/framework-permission-aidl-cpp.so
-vendor/lib/libFaceService.so
 vendor/lib/libSEF.quram.so
 vendor/lib/libflatbuffers-cpp.so
 vendor/lib/libfloatingfeature.so
@@ -2163,7 +2153,6 @@ vendor/lib/vintf-codecsolution-V2-ndk_platform.so
 vendor/lib64/audio_common-aidl-cpp.so
 vendor/lib64/audioclient-types-aidl-cpp.so
 vendor/lib64/framework-permission-aidl-cpp.so
-vendor/lib64/libFaceService.so
 vendor/lib64/libSEF.quram.so
 vendor/lib64/libSemDataProps.so
 vendor/lib64/libSemTelephonyProps.so
