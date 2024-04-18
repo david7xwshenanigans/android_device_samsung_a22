@@ -1375,23 +1375,16 @@ vendor/lib/vndk/libstagefright_xmlparser.so
 vendor/lib/AVCSecureVdecCA.so
 vendor/lib/AVCSecureVencCA.so
 vendor/lib/VP9SecureVdecCA.so
-vendor/lib/android.hardware.media.c2@1.0.so
-vendor/lib/android.hardware.media.c2@1.1.so
-vendor/lib/android.hardware.media.c2@1.2.so
 vendor/lib/libFrucSSMLib.so
 vendor/lib/libHEVCdec_sa.ca7.android.so
 vendor/lib/libJpgEncPipe.so
 vendor/lib/libadpcmdec_mtk.so
 vendor/lib/libavservices_minijail.so
-vendor/lib/libcodec2_hidl@1.0.so
-vendor/lib/libcodec2_hidl@1.1.so
-vendor/lib/libcodec2_hidl@1.2.so
 vendor/lib/libcodec2_hidl_plugin.so
 vendor/lib/libcodec2_mtk_c2store.so
 vendor/lib/libcodec2_mtk_vdec.so
 vendor/lib/libcodec2_mtk_venc.so
 vendor/lib/libcodec2_simple_component.so
-vendor/lib/libcodec2_soft_common.so
 vendor/lib/libcodec2_soft_mtk_imaadpcmdec.so
 vendor/lib/libcodec2_soft_mtk_mp3dec.so
 vendor/lib/libcodec2_soft_mtk_msadpcmdec.so
@@ -1411,7 +1404,6 @@ vendor/lib/libmp3dec_mtk.so
 vendor/lib/libmp4enc_sa.ca7.so
 vendor/lib/libmp4enc_xa.ca7.so
 vendor/lib/libpredeflicker_native.so
-vendor/lib/libsfplugin_ccodec_utils.so
 vendor/lib/libstagefright_amrnb_common.so
 vendor/lib/libstagefright_bufferpool@2.0.1.so
 vendor/lib/libstagefright_bufferqueue_helper_vendor.so
@@ -1454,17 +1446,10 @@ vendor/lib/libvpud_vcodec.so
 vendor/lib64/AVCSecureVdecCA.so
 vendor/lib64/AVCSecureVencCA.so
 vendor/lib64/VP9SecureVdecCA.so
-vendor/lib64/android.hardware.media.c2@1.0.so
-vendor/lib64/android.hardware.media.c2@1.1.so
-vendor/lib64/android.hardware.media.c2@1.2.so
 vendor/lib64/libJpgEncPipe.so
 vendor/lib64/libSecC2ComponentStore.so
 vendor/lib64/libacdk.so
 vendor/lib64/libadpcmdec_mtk.so
-vendor/lib64/libavservices_minijail_vendor.so
-vendor/lib64/libcodec2_hidl@1.0.so
-vendor/lib64/libcodec2_hidl@1.1.so
-vendor/lib64/libcodec2_hidl@1.2.so
 vendor/lib64/libcodec2_hidl_plugin.so
 vendor/lib64/libcodec2_mtk_c2store.so
 vendor/lib64/libcodec2_mtk_vdec.so
@@ -1481,7 +1466,6 @@ vendor/lib64/libcodec2_sec_soft_common.so
 vendor/lib64/libcodec2_sec_vc1dec.so
 vendor/lib64/libcodec2_simple_component.so
 vendor/lib64/libcodec2_soft_ac4dec.so
-vendor/lib64/libcodec2_soft_common.so
 vendor/lib64/libcodec2_soft_eac3dec.so
 vendor/lib64/libcodec2_soft_mtk_imaadpcmdec.so
 vendor/lib64/libcodec2_soft_mtk_mp3dec.so
@@ -1498,7 +1482,6 @@ vendor/lib64/libifcutils_mtk.so
 vendor/lib64/libmfllcore.so
 vendor/lib64/libmmprofile.so
 vendor/lib64/libmp3dec_mtk.so
-vendor/lib64/libsfplugin_ccodec_utils.so
 vendor/lib64/libstagefright_bufferpool@2.0.1.so
 vendor/lib64/libstagefright_flacdec.so
 vendor/lib64/libstagefright_foundation_vendor.so
@@ -1517,7 +1500,6 @@ vendor/lib/libMtkOmxGsmDec.so
 vendor/lib/libMtkOmxMp3Dec.so
 vendor/lib/libstagefright_omx_vendor.so
 vendor/lib/libstagefright_softomx.so
-vendor/lib/libstagefright_softomx_plugin.so
 vendor/lib64/libMtkOmxCore.so
 vendor/lib64/libsomxcmn.so
 

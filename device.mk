@@ -51,6 +51,15 @@ PRODUCT_PACKAGES += \
     libkeystore-wifi-hidl \
     libkeystore-engine-wifi-hidl
 
+# Media
+PRODUCT_PACKAGES += \
+    android.hardware.media.c2@1.2.vendor \
+    libavservices_minijail_vendor \
+    libcodec2_hidl@1.2.vendor \
+    libcodec2_soft_common.vendor
+    libsfplugin_ccodec_utils.vendor \
+    libstagefright_softomx_plugin.vendor
+
 # Neural Networks
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor \
