@@ -63,6 +63,9 @@ TARGET_KERNEL_CLANG_PATH := $(abspath .)/prebuilts/clang/kernel/$(HOST_PREBUILT_
 # Platform
 TARGET_BOARD_PLATFORM := mt6768
 
+# SPL
+VENDOR_SECURITY_PATCH := 2023-11-01
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
