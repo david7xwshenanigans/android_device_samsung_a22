@@ -74,6 +74,10 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.3.vendor
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.config@1.0.vendor \
