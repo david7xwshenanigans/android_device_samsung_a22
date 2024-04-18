@@ -1589,9 +1589,6 @@ vendor/etc/permissions/com.nxp.mifare.xml
 vendor/etc/libnfc-nxp.conf
 vendor/lib/libnxp_extamp_intf.so
 vendor/lib/libnxpsmartpaparser.so
-vendor/lib64/android.hardware.nfc@1.0.so
-vendor/lib64/android.hardware.nfc@1.1.so
-vendor/lib64/android.hardware.nfc@1.2.so
 vendor/lib64/libnxp_extamp_intf.so
 vendor/lib64/libnxpsmartpaparser.so
 vendor/lib64/nfc_nci_nxpsn.so
