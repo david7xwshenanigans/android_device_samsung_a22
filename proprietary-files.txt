@@ -1317,27 +1317,11 @@ vendor/etc/init/init.wlan_drv.rc
 vendor/etc/init/init.wmt_drv.rc
 
 # Keymaster
-vendor/bin/hw/android.hardware.keymaster@4.0-service
-vendor/etc/init/android.hardware.keymaster@4.0-service.rc
-vendor/etc/permissions/android.hardware.hardware_keystore.xml
 vendor/lib/libdecrypt.so
-vendor/lib64/android.hardware.keymaster@3.0.so
-vendor/lib64/android.hardware.keymaster@4.0.so
-vendor/lib64/android.hardware.keymaster@4.1.so
-vendor/lib64/android.system.wifi.keystore@1.0.so
 vendor/lib64/libdecrypt.so
-vendor/lib64/libkeymaster4.so
-vendor/lib64/libkeymaster4_1support.so
-vendor/lib64/libkeymaster4support.so
 vendor/lib64/libkeymaster_helper.so
-vendor/lib64/libkeymaster_messages.so
-vendor/lib64/libkeymaster_portable.so
-vendor/lib64/libkeystore-engine-wifi-hidl.so
-vendor/lib64/libkeystore-wifi-hidl.so
 vendor/lib64/libkmsetkey.so
-vendor/lib64/libpuresoftkeymasterdevice.so
 vendor/lib64/libskeymaster4device.so
-vendor/lib64/libsoft_attestation_cert.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 
@@ -2275,8 +2259,6 @@ vendor/lib64/libSemDataProps.so
 vendor/lib64/libSemTelephonyProps.so
 vendor/lib64/libabfadp.so
 vendor/lib64/libcomposer_ext.so
-vendor/lib64/libcppbor_external.so
-vendor/lib64/libcppcose_rkp.so
 vendor/lib64/libdeccfg.so
 vendor/lib64/libdk_vnd_service_core.so
 vendor/lib64/libdsms_vendor.so

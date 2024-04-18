@@ -36,6 +36,16 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.0-service \
+    libkeymaster4_1support.vendor \
+    libpuresoftkeymasterdevice.vendor
+
+PRODUCT_PACKAGES += \
+    libkeystore-wifi-hidl \
+    libkeystore-engine-wifi-hidl
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
