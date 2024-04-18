@@ -1836,19 +1836,11 @@ vendor/lib64/vendor.samsung.hardware.security.widevine.keyprov@1.0.so
 vendor/bin/hw/android.hardware.sensors@2.0-service.multihal
 vendor/etc/init/android.hardware.sensors@2.0-service-multihal.rc
 -vendor/etc/vintf/manifest/android.hardware.sensors@2.0-multihal.xml
-vendor/lib/android.hardware.sensors@1.0.so
-vendor/lib/android.hardware.sensors@2.0-ScopedWakelock.so
-vendor/lib/android.hardware.sensors@2.0.so
-vendor/lib/android.hardware.sensors@2.1.so
 vendor/lib/librgbwlightsensor.so
 vendor/lib/libsensorndkbridge.so
 vendor/lib/sensors.grip.so
 vendor/lib/sensors.inputvirtual.so
 vendor/lib/sensors.sensorhub.so
-vendor/lib64/android.hardware.sensors@1.0.so
-vendor/lib64/android.hardware.sensors@2.0-ScopedWakelock.so
-vendor/lib64/android.hardware.sensors@2.0.so
-vendor/lib64/android.hardware.sensors@2.1.so
 vendor/lib64/libhwm.so
 vendor/lib64/librgbwlightsensor.so
 vendor/lib64/libsensorndkbridge.so
@@ -2171,7 +2163,6 @@ vendor/etc/tms_audio_policy_configuration.xml
 vendor/etc/traceconfig.txt
 vendor/etc/ueventd.rc
 vendor/etc/vramdiskd.xml
-vendor/lib/android.frameworks.sensorservice@1.0.so
 vendor/lib/audio_common-aidl-cpp.so
 vendor/lib/audioclient-types-aidl-cpp.so
 vendor/lib/framework-permission-aidl-cpp.so
@@ -2210,7 +2201,6 @@ vendor/lib/unihal_cutils@2.1.so
 vendor/lib/unihal_main@2.1.so
 vendor/lib/unihal_uniplugin@1.0.so
 vendor/lib/vintf-codecsolution-V2-ndk_platform.so
-vendor/lib64/android.frameworks.sensorservice@1.0.so
 vendor/lib64/audio_common-aidl-cpp.so
 vendor/lib64/audioclient-types-aidl-cpp.so
 vendor/lib64/framework-permission-aidl-cpp.so
