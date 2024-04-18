@@ -19,6 +19,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.cas@1.2-service-lazy
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.4-service.clearkey \
+    android.hardware.drm@1.4.vendor \
+    libdrm.vendor\
+    libmockdrmcryptoplugin
+
 # Dumpstate
 PRODUCT_PACKAGES += \
     android.hardware.dumpstate@1.1.vendor:64

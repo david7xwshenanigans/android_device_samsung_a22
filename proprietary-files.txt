@@ -917,7 +917,6 @@ vendor/lib/libNoFpsActor.so
 vendor/lib/libOpenCL.so
 vendor/lib/libappgamepq.so
 vendor/lib/libdpframework.so
-vendor/lib/libdrm.so
 vendor/lib/libgamehdr.so
 vendor/lib/libged.so
 vendor/lib/libgpu_aux.so
@@ -959,7 +958,6 @@ vendor/lib64/libNoFpsActor.so
 vendor/lib64/libOpenCL.so
 vendor/lib64/libappgamepq.so
 vendor/lib64/libdpframework.so
-vendor/lib64/libdrm.so
 vendor/lib64/libgamehdr.so
 vendor/lib64/libged.so
 vendor/lib64/libgpu_aux.so
@@ -1007,30 +1005,15 @@ vendor/etc/dax3_media_codecs_dolby_audio.xml
 vendor/etc/media_codecs_dolby_audio.xml
 
 # DRM
-vendor/bin/hw/android.hardware.drm@1.4-service.clearkey
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
-vendor/etc/init/android.hardware.drm@1.4-service.clearkey.rc
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.clearkey.xml
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
 vendor/lib/mediadrm/libdrmclearkeyplugin.so
-vendor/lib/mediadrm/libmockdrmcryptoplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib/android.hardware.drm@1.0.so
-vendor/lib/android.hardware.drm@1.1.so
-vendor/lib/android.hardware.drm@1.2.so
-vendor/lib/android.hardware.drm@1.3.so
-vendor/lib/android.hardware.drm@1.4.so
 vendor/lib/liboemcrypto.so
 vendor/lib/liburee_meta_drmkeyinstall.so
 vendor/lib/libwvhidl.so
 vendor/lib64/mediadrm/libdrmclearkeyplugin.so
-vendor/lib64/mediadrm/libmockdrmcryptoplugin.so
-vendor/lib64/android.hardware.drm@1.0.so
-vendor/lib64/android.hardware.drm@1.1.so
-vendor/lib64/android.hardware.drm@1.2.so
-vendor/lib64/android.hardware.drm@1.3.so
-vendor/lib64/android.hardware.drm@1.4.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
 
