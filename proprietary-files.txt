@@ -1476,7 +1476,7 @@ vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
 vendor/etc/init/bootperf.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
--vendor/etc/vintf/manifest/power-default.xml
+-vendor/etc/vintf/manifest/power-default.xml:vendor/etc/vintf/manifest/power-default-mtk.xml
 vendor/etc/power_app_cfg.xml
 vendor/etc/powercontable.xml
 vendor/etc/powerscntbl.xml
@@ -1658,7 +1658,7 @@ vendor/lib64/vendor.samsung.hardware.security.widevine.keyprov@1.0.so
 # Sensors
 vendor/bin/hw/android.hardware.sensors@2.0-service.multihal
 vendor/etc/init/android.hardware.sensors@2.0-service-multihal.rc
--vendor/etc/vintf/manifest/android.hardware.sensors@2.0-multihal.xml
+-vendor/etc/vintf/manifest/android.hardware.sensors@2.0-multihal.xml:vendor/etc/vintf/manifest/android.hardware.sensors@2.0-multihal-mtk.xml
 vendor/lib/librgbwlightsensor.so
 vendor/lib/libsensorndkbridge.so
 vendor/lib/sensors.grip.so
@@ -1832,9 +1832,9 @@ vendor/etc/init/tetheroffloadservice.rc
 vendor/etc/init/wifi.rc
 vendor/etc/init/wifi_mtk.rc
 vendor/etc/init/wlan_assistant.rc
--vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
--vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml
--vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
+-vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml:vendor/etc/vintf/manifest/android.hardware.wifi.hostapd-mtk.xml
+-vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml:vendor/etc/vintf/manifest/android.hardware.wifi.supplicant-mtk.xml
+-vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml:vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service-mtk.xml
 vendor/etc/wfd_source_capability.csv
 vendor/etc/wlan_common_rc
 vendor/etc/wlan_vendor_rc
