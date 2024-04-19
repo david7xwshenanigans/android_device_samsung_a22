@@ -31,14 +31,14 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libalsautils \
+    libaudiopreprocessing \
     libdynproc \
     libhapticgenerator \
     libtinycompress \
     libnbaio_mono
 
 PRODUCT_PACKAGES += \
-    libstagefright_bufferpool@2.0.1.vendor \
-    libstagefright_foundation
+    libstagefright_bufferpool@2.0.1.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.0-impl \
@@ -67,6 +67,10 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.1-impl \
     android.hardware.bluetooth@1.1.vendor
 
+# Camera
+PRODUCT_PACKAGES += \
+    libgui_vendor
+
 # CAS
 PRODUCT_PACKAGES += \
     android.hardware.cas@1.2-service-lazy
@@ -86,6 +90,7 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service
 
 PRODUCT_PACKAGES += \
+    gralloc.default \
     libgrallocusage.vendor
 
 # DRM
@@ -93,11 +98,17 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey \
     android.hardware.drm@1.4.vendor \
     libdrm.vendor\
-    libmockdrmcryptoplugin
+    libdrmclearkeyplugin \
+    libmockdrmcryptoplugin \
+    libz_stable.vendor
 
 # Dumpstate
 PRODUCT_PACKAGES += \
     android.hardware.dumpstate@1.1.vendor:64
+
+# fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -145,8 +156,10 @@ PRODUCT_PACKAGES += \
 # Media
 PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.2.vendor \
+    libavservices_minijail \
     libavservices_minijail_vendor \
     libcodec2_hidl@1.2.vendor \
+    libcodec2_simple_component \
     libcodec2_soft_common.vendor \
     libsfplugin_ccodec_utils.vendor \
     libstagefright_softomx_plugin.vendor
@@ -170,9 +183,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/nfc,$(TARGET_COPY_OUT_VENDOR)/etc)
 
-# fastbootd
+# Network tools
 PRODUCT_PACKAGES += \
-    fastbootd
+    libpcap
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -238,7 +251,8 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2.vendor
+    android.hardware.power@1.2.vendor \
+    power.default
 
 # Public libraries
 PRODUCT_COPY_FILES += \
@@ -320,6 +334,10 @@ PRODUCT_PACKAGES += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3.vendor
+
+# Vibrator
+PRODUCT_PACKAGES += \
+    vibrator.default
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
