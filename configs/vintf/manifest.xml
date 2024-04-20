@@ -530,10 +530,6 @@
         </interface>
         <fqname>@2.0::ISehDrk/default</fqname>
     </hal>
-    <hal format="aidl">
-        <name>vendor.samsung.hardware.snap</name>
-        <fqname>ISehSnap/default</fqname>
-    </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.sysinput</name>
         <transport>hwbinder</transport>

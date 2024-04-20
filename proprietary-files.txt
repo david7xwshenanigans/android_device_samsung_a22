@@ -1285,7 +1285,6 @@ vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
 vendor/etc/init/bootperf.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
--vendor/etc/vintf/manifest/power-default.xml:vendor/etc/vintf/manifest/power-default-mtk.xml
 vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
 vendor/lib/libmtkperf_client_vendor.so
 vendor/lib/libperfctl_vendor.so
