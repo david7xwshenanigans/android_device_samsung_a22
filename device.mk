@@ -16,11 +16,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
-    android.hardware.audio@6.0.vendor \
+    android.hardware.audio@6.0-impl \
+    android.hardware.audio@7.0-impl \
     android.hardware.audio@7.0-util.vendor \
     android.hardware.audio.effect@2.0-impl \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.effect@7.0-impl \
+    android.hardware.audio.service \
     libaudioclient_aidl_conversion \
     libaudiofoundation.vendor \
     libbluetooth_audio_session \
