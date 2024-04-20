@@ -56,6 +56,7 @@ fi
 function blob_fixup {
     case "$1" in
         vendor/bin/hw/android.hardware.sensors@2.0-service.multihal)
+            "$PATCHELF" --replace-needed libhidlbase.so libhidlbase-v31.so "${2}"
             "$PATCHELF" --replace-needed libutils.so libutils-v32.so "$2"
             ;;
         vendor/bin/hw/android.hardware.wifi@1.0-service-lazy | vendor/bin/hw/vendor.samsung.hardware.wifi@2.0-service)
