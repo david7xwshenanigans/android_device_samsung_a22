@@ -191,9 +191,9 @@ PRODUCT_COPY_FILES += \
 # NDK
 PRODUCT_PACKAGES += \
     android.hardware.light-V1-ndk_platform.vendor \
-    android.hardware.power-V2-ndk_platform \
-    android.hardware.vibrator-V2-ndk_platform \
-    android.hardware.common-V2-ndk_platform
+    android.hardware.power-V2-ndk_platform.vendor \
+    android.hardware.vibrator-V2-ndk_platform.vendor \
+    android.hardware.common-V2-ndk_platform.vendor
 
 # Neural Networks
 PRODUCT_PACKAGES += \
