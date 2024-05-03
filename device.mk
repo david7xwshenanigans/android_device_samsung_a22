@@ -86,6 +86,12 @@ PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups_30.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
     $(LOCAL_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
 
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images_vendor \
+    product_charger_res_images_vendor \
+    libsuspend
+
 # Disable priv-app property whitelist
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.control_privapp_permissions=log
