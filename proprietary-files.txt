@@ -656,6 +656,8 @@ vendor/lib64/hw/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so
 vendor/lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so
 vendor/lib64/gc02m1_mipi_raw_IdxMgr.so
 vendor/lib64/gc02m1_mipi_raw_tuning.so
+vendor/lib64/gc02m1b_mipi_raw_IdxMgr.so
+vendor/lib64/gc02m1b_mipi_raw_tuning.so
 vendor/lib64/imx258f_mipi_raw_IdxMgr.so
 vendor/lib64/imx258f_mipi_raw_tuning.so
 vendor/lib64/imx582_mipi_raw_IdxMgr.so
@@ -1091,7 +1093,7 @@ vendor/lib64/vendor.samsung.hardware.biometrics.face-V2-ndk_platform.so
 vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint@3.0.so
 
 # Firmware
-vendor/firmware/nfc/sec_s3nrn4v_firmware.bin
+vendor/firmware/nfc/libpn557_fw.so
 vendor/firmware/BT_FW.cfg
 vendor/firmware/WIFI
 vendor/firmware/WIFI_RAM_CODE_soc1_0_1a_1.bin
@@ -1650,14 +1652,12 @@ vendor/lib64/libtextclassifier_hash.so
 vendor/lib64/libtflite_mtk.so
 
 # NFC
-vendor/bin/hw/sec.android.hardware.nfc@1.2-service
+vendor/bin/hw/nxp.android.hardware.nfc@1.2-service
 vendor/etc/init/init.nfc.samsung.rc
-vendor/etc/init/sec.android.hardware.nfc@1.2-service.rc
-vendor/etc/nfc/sec_s3nrn4v_hwreg.bin
-vendor/etc/nfc/sec_s3nrn4v_swreg.bin
+vendor/etc/init/nxp.android.hardware.nfc@1.2-service.rc
 vendor/etc/permissions/com.nxp.mifare.xml
--vendor/etc/vintf/manifest/sec.android.hardware.nfc@1.2-service.xml
-vendor/etc/libnfc-sec-vendor.conf
+-vendor/etc/vintf/manifest/nxp.android.hardware.nfc@1.2-service.xml
+vendor/etc/libnfc-nxp.conf
 vendor/lib/libnxp_extamp_intf.so
 vendor/lib/libnxpsmartpaparser.so
 vendor/lib64/android.hardware.nfc@1.0.so
@@ -1665,7 +1665,7 @@ vendor/lib64/android.hardware.nfc@1.1.so
 vendor/lib64/android.hardware.nfc@1.2.so
 vendor/lib64/libnxp_extamp_intf.so
 vendor/lib64/libnxpsmartpaparser.so
-vendor/lib64/nfc_nci_sec.so
+vendor/lib64/nfc_nci_nxpsn.so
 vendor/lib64/vendor.samsung.hardware.nfc@2.0.so
 
 # NVRAM
