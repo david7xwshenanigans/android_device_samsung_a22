@@ -485,16 +485,6 @@
         </interface>
         <fqname>@2.0::ISehDrk/default</fqname>
     </hal>
-    <hal format="hidl" override="true">
-        <name>vendor.samsung.hardware.security.skpm</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISehSkpm</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ISehSkpm/default</fqname>
-    </hal>
     <hal format="aidl">
         <name>vendor.samsung.hardware.snap</name>
         <fqname>ISehSnap/default</fqname>
