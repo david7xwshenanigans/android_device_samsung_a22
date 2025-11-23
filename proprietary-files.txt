@@ -1,4 +1,4 @@
-# All blobs from a32xx-user 13 TP1A.220624.014 A325FXXS6DWK1 release-keys, unless pinned
+# All blobs from a22nsxx-user 13 TP1A.220624.014 A225FXXSBDYE1 release-keys, unless pinned
 
 # AAL
 vendor/lib/libaal_cust.so
@@ -595,28 +595,24 @@ vendor/bin/lib3a.ccu.dm
 vendor/bin/lib3a.ccu.pm
 vendor/bin/libccu_gc02m1_mipi_raw.dm
 vendor/bin/libccu_gc02m1_mipi_raw.pm
-vendor/bin/libccu_gc5035_mipi_raw.dm
-vendor/bin/libccu_gc5035_mipi_raw.pm
-vendor/bin/libccu_gc5035b_mipi_raw.dm
-vendor/bin/libccu_gc5035b_mipi_raw.pm
-vendor/bin/libccu_hi2021q_mipi_raw.dm
-vendor/bin/libccu_hi2021q_mipi_raw.pm
 vendor/bin/libccu_imx355_mipi_raw.dm
 vendor/bin/libccu_imx355_mipi_raw.pm
-vendor/bin/libccu_s5kgw3_mipi_raw.dm
-vendor/bin/libccu_s5kgw3_mipi_raw.pm
-vendor/bin/libccu_sr846d_mipi_raw.dm
-vendor/bin/libccu_sr846d_mipi_raw.pm
+vendor/bin/libccu_imx582_mipi_raw.dm
+vendor/bin/libccu_imx582_mipi_raw.pm
+vendor/bin/libccu_s5kgm2_mipi_raw.dm
+vendor/bin/libccu_s5kgm2_mipi_raw.pm
+vendor/bin/libccu_imx258f_mipi_raw.dm
+vendor/bin/libccu_imx258f_mipi_raw.pm
 vendor/etc/beauty/settings.dat
 vendor/etc/init/camera.unihal.rc
 vendor/etc/init/vendor.samsung.hardware.camera.provider@4.0-service_64_mtk.rc
 vendor/lib/hw/camera.unihal.default.so
 vendor/lib/gc02m1_mipi_raw_tuning.so
 vendor/lib/gc02m1b_mipi_raw_tuning.so
-vendor/lib/gc5035_mipi_raw_tuning.so
-vendor/lib/gc5035b_mipi_raw_tuning.so
-vendor/lib/hi2021q_mipi_raw_tuning.so
+vendor/lib/imx258f_mipi_raw_tuning.so
 vendor/lib/imx355_mipi_raw_tuning.so
+vendor/lib/imx582_mipi_raw_tuning.so
+vendor/lib/s5kgm2_mipi_raw_tuning.so
 vendor/lib/libBeauty_v4.camera.samsung.so
 vendor/lib/libDualCamBokehCapture.camera.samsung.so
 vendor/lib/libFacePreProcessing.camera.samsung.so
@@ -653,8 +649,6 @@ vendor/lib/libvdis.uniplugin@1.0.so
 vendor/lib/libvdis_core.so
 vendor/lib/libvideobeauty.arcsoft.so
 vendor/lib/libvideobeauty.uniplugin@1.0.so
-vendor/lib/s5kgw3_mipi_raw_tuning.so
-vendor/lib/sr846d_mipi_raw_tuning.so
 vendor/lib64/hw/camera.mt6768.so
 vendor/lib64/hw/camera.unihal.default.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.isphal@1.0-impl.so
@@ -662,14 +656,12 @@ vendor/lib64/hw/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so
 vendor/lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so
 vendor/lib64/gc02m1_mipi_raw_IdxMgr.so
 vendor/lib64/gc02m1_mipi_raw_tuning.so
-vendor/lib64/gc02m1b_mipi_raw_IdxMgr.so
-vendor/lib64/gc02m1b_mipi_raw_tuning.so
-vendor/lib64/gc5035_mipi_raw_IdxMgr.so
-vendor/lib64/gc5035_mipi_raw_tuning.so
-vendor/lib64/gc5035b_mipi_raw_IdxMgr.so
-vendor/lib64/gc5035b_mipi_raw_tuning.so
-vendor/lib64/hi2021q_mipi_raw_IdxMgr.so
-vendor/lib64/hi2021q_mipi_raw_tuning.so
+vendor/lib64/imx258f_mipi_raw_IdxMgr.so
+vendor/lib64/imx258f_mipi_raw_tuning.so
+vendor/lib64/imx582_mipi_raw_IdxMgr.so
+vendor/lib64/imx582_mipi_raw_tuning.so
+vendor/lib64/s5kgm2_mipi_raw_IdxMgr.so
+vendor/lib64/s5kgm2_mipi_raw_tuning.so
 vendor/lib64/imx355_mipi_raw_IdxMgr.so
 vendor/lib64/imx355_mipi_raw_tuning.so
 vendor/lib64/lib3a.ae.core.so
@@ -684,7 +676,6 @@ vendor/lib64/lib3a.flash.so
 vendor/lib64/lib3a.gma.so
 vendor/lib64/lib3a.lce.so
 vendor/lib64/lib3a.log.so
-vendor/lib64/lib3a.n3d3a.so
 vendor/lib64/libBeauty_v4.camera.samsung.so
 vendor/lib64/libDLInterface.camera.samsung.so
 vendor/lib64/libDualCamBokehCapture.camera.samsung.so
@@ -842,12 +833,8 @@ vendor/lib64/libvdis.uniplugin@1.0.so
 vendor/lib64/libvdis_core.so
 vendor/lib64/libvideobeauty.arcsoft.so
 vendor/lib64/libvideobeauty.uniplugin@1.0.so
-vendor/lib64/s5kgw3_mipi_raw_IdxMgr.so
-vendor/lib64/s5kgw3_mipi_raw_tuning.so
 vendor/lib64/shared-file-region-aidl-cpp.so
 vendor/lib64/spatializer-aidl-cpp.so
-vendor/lib64/sr846d_mipi_raw_IdxMgr.so
-vendor/lib64/sr846d_mipi_raw_tuning.so
 vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.lomoeffect@1.0.so
 vendor/lib64/vendor.samsung.hardware.camera.device@5.0-impl.so
