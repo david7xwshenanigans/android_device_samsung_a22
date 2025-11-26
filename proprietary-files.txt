@@ -1240,9 +1240,6 @@ vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
 vendor/bin/vpud
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
 vendor/etc/init/vpud.rc
-vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy
-vendor/etc/seccomp_policy/samsung.software.media.c2-base-policy
-vendor/etc/seccomp_policy/samsung.software.media.c2-ext-policy
 vendor/lib/vndk/libstagefright_xmlparser.so
 vendor/lib/AVCSecureVdecCA.so
 vendor/lib/AVCSecureVencCA.so
