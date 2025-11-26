@@ -1433,7 +1433,6 @@ vendor/etc/init/init.nfc.samsung.rc
 vendor/etc/init/nxp.android.hardware.nfc@1.2-service.rc
 vendor/etc/permissions/com.nxp.mifare.xml
 -vendor/etc/vintf/manifest/nxp.android.hardware.nfc@1.2-service.xml
-vendor/etc/libnfc-nxp.conf
 vendor/lib/libnxp_extamp_intf.so
 vendor/lib/libnxpsmartpaparser.so
 vendor/lib64/libnxp_extamp_intf.so
