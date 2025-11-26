@@ -1989,11 +1989,6 @@ vendor/lib64/libtvm_wrapper.so
 vendor/lib64/libuuid.so
 vendor/lib64/libvkmanager_vendor.so
 vendor/lib64/libvkservice.so
-<<<<<<< HEAD
-vendor/lib64/libz_stable.so
-=======
-vendor/lib64/libwsmd_functions.so
->>>>>>> 0441eff (a32: Build these packages from source)
 vendor/lib64/unihal_cutils@2.1.so
 vendor/lib64/unihal_main@2.1.so
 vendor/lib64/unihal_uniplugin@1.0.so
