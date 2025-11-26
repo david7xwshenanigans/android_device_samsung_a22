@@ -1,4 +1,4 @@
-service vendor.light-default /vendor/bin/hw/android.hardware.light-service.a32
+service vendor.light-default /vendor/bin/hw/android.hardware.light-service.a22
     class hal
     user system
     group system

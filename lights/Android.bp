@@ -14,9 +14,9 @@
 // limitations under the License.
 
 cc_binary {
-    name: "android.hardware.light-service.a32",
-    init_rc: ["android.hardware.light-service.a32.rc"],
-    vintf_fragments: ["android.hardware.light-service.a32.xml"],
+    name: "android.hardware.light-service.a22",
+    init_rc: ["android.hardware.light-service.a22.rc"],
+    vintf_fragments: ["android.hardware.light-service.a22.xml"],
     relative_install_path: "hw",
     srcs: [
         "main.cpp",
