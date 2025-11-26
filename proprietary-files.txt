@@ -1656,9 +1656,6 @@ vendor/lib64/vendor.samsung.hardware.security.drk@2.0.so
 vendor/lib64/vendor.samsung.hardware.security.widevine.keyprov@1.0.so
 
 # Sensors
-vendor/bin/hw/android.hardware.sensors@2.0-service.multihal
-vendor/etc/init/android.hardware.sensors@2.0-service-multihal.rc
--vendor/etc/vintf/manifest/android.hardware.sensors@2.0-multihal.xml:vendor/etc/vintf/manifest/android.hardware.sensors@2.0-multihal-mtk.xml
 vendor/lib/librgbwlightsensor.so
 vendor/lib/libsensorndkbridge.so
 vendor/lib/sensors.grip.so
@@ -1927,7 +1924,6 @@ vendor/bin/add.pb
 vendor/bin/cass
 vendor/bin/dconfig
 vendor/bin/dexecutor
-vendor/bin/dmabuf_dump
 vendor/bin/dsmsca
 vendor/bin/fsdbg_vendor
 vendor/bin/iod
