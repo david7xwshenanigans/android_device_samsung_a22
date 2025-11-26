@@ -471,7 +471,6 @@ vendor/lib64/libspatializerparamstorage.so
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
 vendor/bin/autobt
 vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc
-vendor/etc/bluetooth_audio_policy_configuration.xml
 vendor/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
 vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
@@ -1970,11 +1969,9 @@ vendor/etc/AudioLog_dynamic.xml
 vendor/etc/SetMultiCal.bin
 vendor/etc/SoundBoosterParam.txt
 vendor/etc/VideoLog_dynamic.xml
-vendor/etc/a2dpsink_audio_policy_configuration.xml
 vendor/etc/aurisys_config.xml
 vendor/etc/cgroups.json
 vendor/etc/floating_feature.xml
-vendor/etc/hearing_aid_audio_policy_configuration.xml
 vendor/etc/hqm_device.xml
 vendor/etc/mercury.json
 vendor/etc/mtk_platform_codecs_config.xml
@@ -1985,9 +1982,7 @@ vendor/etc/plmn_delta_attaio.bin
 vendor/etc/plmn_delta_hktw.bin
 vendor/etc/plmn_delta_usagsm.bin
 vendor/etc/plmn_se13.bin
-vendor/etc/sec_audio_volume_curve.xml
 vendor/etc/task_profiles.json
-vendor/etc/tms_audio_policy_configuration.xml
 vendor/etc/traceconfig.txt
 vendor/etc/ueventd.rc
 vendor/etc/vramdiskd.xml
