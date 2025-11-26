@@ -208,7 +208,7 @@
 
          The values must be non-negative and strictly increasing, and correspond to the values in
          the config_minimumBrightnessCurveNits array. -->
-    <array name="config_minimumBrightnessCurveLux">
+   <array name="config_minimumBrightnessCurveLux">
         <item>0.0</item>
         <item>10.0</item>
         <item>100.0</item>
@@ -333,4 +333,4 @@
          and Strength as defined in Authenticators.java -->
     <string-array name="config_biometric_sensors">
         <item>0:2:15</item>
-    </string-array>
+</resources>
