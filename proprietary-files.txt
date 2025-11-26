@@ -1243,8 +1243,6 @@ vendor/etc/init/vpud.rc
 vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy
 vendor/etc/seccomp_policy/samsung.software.media.c2-base-policy
 vendor/etc/seccomp_policy/samsung.software.media.c2-ext-policy
-vendor/etc/media_codecs_mediatek_audio.xml
-vendor/etc/media_codecs_mediatek_video.xml
 vendor/lib/vndk/libstagefright_xmlparser.so
 vendor/lib/AVCSecureVdecCA.so
 vendor/lib/AVCSecureVencCA.so
@@ -1974,7 +1972,6 @@ vendor/etc/cgroups.json
 vendor/etc/floating_feature.xml
 vendor/etc/hqm_device.xml
 vendor/etc/mercury.json
-vendor/etc/mtk_platform_codecs_config.xml
 vendor/etc/mtu-conf.xml
 vendor/etc/pdpcnt-conf.xml
 vendor/etc/plmn_delta.bin
