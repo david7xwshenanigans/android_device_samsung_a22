@@ -63,11 +63,14 @@ TARGET_KERNEL_CLANG_PATH := $(abspath .)/prebuilts/clang/kernel/$(HOST_PREBUILT_
 # Platform
 TARGET_BOARD_PLATFORM := mt6768
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6768
+
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # SPL
-VENDOR_SECURITY_PATCH := 2023-11-01
+VENDOR_SECURITY_PATCH := 2025-05-01
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
