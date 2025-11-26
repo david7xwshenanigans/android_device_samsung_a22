@@ -1615,6 +1615,8 @@ vendor/lib64/vendor.samsung.hardware.security.drk@2.0.so
 vendor/lib64/vendor.samsung.hardware.security.widevine.keyprov@1.0.so
 
 # Sensors
+vendor/bin/hw/android.hardware.sensors@2.0-service.multihal
+vendor/etc/init/android.hardware.sensors@2.0-service-multihal.rc
 vendor/lib/librgbwlightsensor.so
 vendor/lib/libsensorndkbridge.so
 vendor/lib/sensors.grip.so
@@ -1947,12 +1949,6 @@ vendor/lib/libsnaace.so
 vendor/lib/libsnamrnb.so
 vendor/lib/libsnamrwb.so
 vendor/lib/libuuid.so
-<<<<<<< HEAD
-vendor/lib/libvpx.so
-vendor/lib/shared-file-region-aidl-cpp.so
-=======
-vendor/lib/libwsmd_functions.so
->>>>>>> 0441eff (a32: Build these packages from source)
 vendor/lib/unihal_cutils@2.1.so
 vendor/lib/unihal_main@2.1.so
 vendor/lib/unihal_uniplugin@1.0.so
@@ -1984,12 +1980,6 @@ vendor/lib64/libsecfr_engine.so
 vendor/lib64/libsecfr_model.so
 vendor/lib64/libsecnativefeature.so
 vendor/lib64/libsecure_storage.so
-<<<<<<< HEAD
-vendor/lib64/libshmemcompat.so
-vendor/lib64/libshmemutil.so
-=======
-vendor/lib64/libskhynix_q2b_shared.so
->>>>>>> 0441eff (a32: Build these packages from source)
 vendor/lib64/libsnaace.so
 vendor/lib64/libsnamrnb.so
 vendor/lib64/libsnamrwb.so
