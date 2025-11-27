@@ -1895,7 +1895,6 @@ vendor/bin/test_model.json
 vendor/bin/wvkprov
 vendor/etc/init/cass.rc
 vendor/etc/init/dsmsca.rc
-vendor/etc/init/init.a22.rc
 vendor/etc/init/init.fpsgo.rc
 vendor/etc/init/init.vendor.onebinary.rc
 vendor/etc/init/init.vendor.sysfw.rc
