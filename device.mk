@@ -201,6 +201,7 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 PRODUCT_PACKAGES += \
     FrameworksResOverlayA22 \
     SettingsOverlayA22 \
+    SettingsProviderOverlayA22 \
     TetheringConfigOverlayA22 \
     SystemUIOverlayA22 \
     WifiOverlayA22
