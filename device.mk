@@ -202,6 +202,7 @@ PRODUCT_PACKAGES += \
     FrameworksResOverlayA22 \
     SettingsOverlayA22 \
     TetheringConfigOverlayA22 \
+    SystemUIOverlayA22 \
     WifiOverlayA22
 
 # Permissions
