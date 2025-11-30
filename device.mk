@@ -352,5 +352,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
+# PRODUCT_COPY_FILES += \
+    device/samsung/a22-kernel/dtb.img:$(PRODUCT_OUT)/dtb.img
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/samsung/a22/a22-vendor.mk)
