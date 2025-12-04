@@ -30,14 +30,13 @@
         <fqname>@1.1::IBluetoothHci/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.camera.provider</name>
+        <name>vendor.samsung.hardware.camera.provider</name>
         <transport>hwbinder</transport>
-        <version>2.6</version>
+        <version>4.0</version>
         <interface>
-            <name>ICameraProvider</name>
+            <name>ISehCameraProvider</name>
             <instance>legacy/0</instance>
-        </interface>
-        <fqname>@2.6::ICameraProvider/legacy/0</fqname>
+        </interface><fqname>@4.0::ISehCameraProvider/legacy/0</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.gatekeeper</name>
@@ -101,6 +100,18 @@
         </interface>
         <fqname>@4.0::IKeymasterDevice/default</fqname>
     </hal>
+   <hal format="hidl" override="true">
+        <name>android.hardware.media.c2</name>
+        <transport>hwbinder</transport>
+        <version>1.2</version>
+        <interface>
+            <name>IComponentStore</name>
+            <instance>default</instance>
+            <instance>default0</instance>
+        </interface>
+        <fqname>@1.2::IComponentStore/default</fqname>
+        <fqname>@1.2::IComponentStore/default0</fqname>
+   </hal>
     <hal format="hidl">
         <name>android.hardware.media.omx</name>
         <transport>hwbinder</transport>
@@ -529,6 +540,16 @@
             <instance>default</instance>
         </interface>
         <fqname>@2.0::ISehDrk/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.security.engmode</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISehEngmode</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::ISehEngmode/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.sysinput</name>

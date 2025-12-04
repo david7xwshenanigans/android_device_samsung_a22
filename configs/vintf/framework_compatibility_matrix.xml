@@ -52,6 +52,15 @@
     </interface>
 </hal>
 <hal format="hidl" optional="true">
+    <name>android.hardware.media.c2</name>
+    <version>1.0-2</version>
+    <interface>
+        <name>IComponentStore</name>
+        <instance>default</instance>
+        <instance>default0</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
     <name>android.hardware.radio.deprecated</name>
     <version>1.0</version>
     <interface>
@@ -328,10 +337,34 @@
     </interface>
 </hal>
 <hal format="hidl" optional="true">
+    <name>vendor.samsung.hardware.camera.provider</name>
+    <version>4.0</version>
+    <interface>
+        <name>ISehCameraProvider</name>
+        <instance>legacy/0</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
     <name>vendor.samsung.hardware.gnss</name>
     <version>2.0</version>
     <interface>
         <name>ISehGnss</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>vendor.samsung.hardware.hyper</name>
+    <version>2</version>
+    <interface>
+        <name>ISehHyPer</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.samsung.hardware.security.engmode</name>
+    <version>1.0</version>
+    <interface>
+        <name>ISehEngmode</name>
         <instance>default</instance>
     </interface>
 </hal>

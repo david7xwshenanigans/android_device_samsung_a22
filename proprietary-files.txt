@@ -1007,11 +1007,12 @@ vendor/etc/gnss/deleteLogCommands
 vendor/etc/gnss/mnl.prop
 
 # Hyper
-vendor/bin/hw/vendor.samsung.hardware.hyper-service
-vendor/etc/hyper/config_chipset.json
-vendor/etc/hyper/config_hyper_permission.json
-vendor/etc/hyper/config_vendor.json
-vendor/etc/init/hyper-default-sec.rc
+# vendor/bin/hw/vendor.samsung.hardware.hyper-service
+# vendor/etc/hyper/config_chipset.json
+# vendor/etc/hyper/config_hyper_permission.json
+# vendor/etc/hyper/config_vendor.json
+# vendor/etc/init/hyper-default-sec.rc
+# vendor/etc/vintf/manifest/hyper-default-sec.xml
 vendor/lib/libhypermotion.uniplugin@1.0.so
 vendor/lib/libhypermotion_core.so
 vendor/lib64/libhyper.so

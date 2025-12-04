@@ -45,8 +45,8 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3.vendor
 
 PRODUCT_PACKAGES += \
-    BesLoudness \
-    MtkInCallService
+    BesLoudness
+#    MtkInCallService
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/a2dpsink_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dpsink_audio_policy_configuration.xml \
@@ -107,8 +107,8 @@ PRODUCT_PACKAGES += \
     libdrm.vendor\
     libdrmclearkeyplugin \
     libmockdrmcryptoplugin \
-    libprotobuf-cpp-lite-3.9.1-vendorcompat \
     libz_stable.vendor
+    # libprotobuf-cpp-lite-3.9.1-vendorcompat \
 
 # Dumpstate
 PRODUCT_PACKAGES += \
@@ -403,10 +403,10 @@ PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.control@1.1.vendor
 
 PRODUCT_PACKAGES += \
-    android.hardware.wifi-service \
     hostapd \
-    libwifi-hal-wrapper \
     wpa_supplicant
+    # android.hardware.wifi-service \
+    libwifi-hal-wrapper \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/indoorchannel.info:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/indoorchannel.info \
