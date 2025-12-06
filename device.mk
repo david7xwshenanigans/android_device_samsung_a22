@@ -16,6 +16,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
+    android.hardware.audio@6.0.vendor \
     android.hardware.audio@7.0-util.vendor \
     android.hardware.audio.effect@2.0-impl \
     android.hardware.audio.effect@6.0-impl \
@@ -181,6 +182,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
+
+# NDK
+PRODUCT_PACKAGES += \
+    android.hardware.power-V2-ndk_platform \
+    android.hardware.vibrator-V2-ndk_platform \
+    android.hardware.common-V2-ndk_platform
 
 # Neural Networks
 PRODUCT_PACKAGES += \
@@ -403,6 +410,13 @@ PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.control@1.1.vendor
 
 PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0.vendor \
+    android.hardware.wifi@1.1.vendor \
+    android.hardware.wifi@1.2.vendor \
+    android.hardware.wifi@1.3.vendor \
+    android.hardware.wifi@1.4.vendor \
+    android.hardware.wifi@1.5.vendor \
+    android.hardware.wifi@1.6.vendor \
     hostapd \
     wpa_supplicant
     # android.hardware.wifi-service \
