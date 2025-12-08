@@ -932,6 +932,9 @@ vendor/lib64/libsynaFpSensorTestNwd.so
 vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint@3.0.so
 
 # Firmware
+vendor/firmware/aw8896_reg.bin
+vendor/firmware/aw8896_cfg.bin
+vendor/firmware/aw8896_fw_e.bin
 vendor/firmware/nfc/libpn557_fw.so
 vendor/firmware/BT_FW.cfg
 vendor/firmware/WIFI
@@ -1433,7 +1436,7 @@ vendor/etc/virtual-spn-conf-by-imsi.xml
 system/framework/mediatek-common.jar
 system/framework/mediatek-framework.jar
 system/framework/mediatek-ims-base.jar
-system/priv-app/imsservice/imsservice.apk|9d88ea1e52476f6efb8c0031c951b70e32c8f662
+# system/priv-app/imsservice/imsservice.apk|9d88ea1e52476f6efb8c0031c951b70e32c8f662
 
 # SAIV
 vendor/etc/saiv/gae/MeanFea.bin
