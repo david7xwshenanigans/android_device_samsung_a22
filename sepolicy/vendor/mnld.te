@@ -1,0 +1,3 @@
+allow mnld hal_gnss_default:unix_dgram_socket sendto;
+
+get_prop(mnld, zram_config_prop)

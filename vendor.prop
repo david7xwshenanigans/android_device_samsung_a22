@@ -96,6 +96,7 @@ ro.vendor.mtk_agps_app=1
 ro.vendor.mtk_gps_support=1
 ro.vendor.mtk_log_hide_gps=2
 ro.vendor.mtk_mapi_support=1
+persist.vendor.gps.lna_pin_enable=1
 
 # IMS
 persist.vendor.ims_support=1
