@@ -20,7 +20,7 @@
 
 #include <fstream>
 
-#define LCD_LED         "/sys/class/leds/lcd-backlight/"
+#define LCD_LED         "/sys/class/backlight/panel/"
 
 #define BRIGHTNESS      "brightness"
 #define MAX_BRIGHTNESS  "max_brightness"
