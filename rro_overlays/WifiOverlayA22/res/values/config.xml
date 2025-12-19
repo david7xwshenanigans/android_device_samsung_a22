@@ -45,5 +45,4 @@
 
     <!-- Default access point SSID used for tethering -->
     <string name="wifi_tether_configure_ssid_default" translatable="false">Galaxy A22</string>
-
 </resources>

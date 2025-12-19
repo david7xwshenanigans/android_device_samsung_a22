@@ -6,6 +6,8 @@ on post-fs-data
     mkdir /data/vendor/log/wifi 0755 system system
 
 on boot
+    chown wifi wifi /dev/wmtWifi
+    chmod 0660 /dev/wmtWifi
 
 # WMT
 service wmt_loader /vendor/bin/wmt_loader
@@ -30,6 +32,9 @@ on property:persist.vendor.connsys.coredump.mode=2
 
 on property:persist.vendor.connsys.coredump.mode=0
     stop stp_dump
+
+on property:vendor.connsys.driver.ready=yes
+    write /dev/wmtWifi "1"
 
 on property:vendor.connsys.driver.ready=yes && property:persist.vendor.connsys.coredump.mode=*
     write /proc/driver/wmt_user_proc "0x1 ${persist.vendor.connsys.coredump.mode}"
