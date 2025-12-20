@@ -1,0 +1,2 @@
+type shub_device, dev_type;
+type io_device, dev_type;

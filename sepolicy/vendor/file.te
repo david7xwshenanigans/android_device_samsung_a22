@@ -1,0 +1,6 @@
+type sysfs_ski_sensor_writable, fs_type, sysfs_type;
+type sysfs_sensor_writable, fs_type, sysfs_type;
+type sysfs_ss_writable, fs_type, sysfs_type;
+type sysfs_ski_display_writable, fs_type, sysfs_type;
+type sysfs_sec, fs_type, sysfs_type;
+type sysfs_iio_devices, fs_type, sysfs_type;

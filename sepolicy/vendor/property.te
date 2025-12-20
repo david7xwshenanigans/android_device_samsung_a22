@@ -1,0 +1,2 @@
+type sns_camera_light_prop, property_type, vendor_property_type;
+type csc_prop, property_type, vendor_property_type;
