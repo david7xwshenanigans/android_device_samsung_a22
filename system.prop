@@ -1,3 +1,6 @@
+# A2DP
+ro.bluetooth.a2dp_offload.supported=false
+persist.bluetooth.a2dp_offload.disabled=true
 
 # AEE
 ro.vendor.have_aee_feature=1

@@ -116,7 +116,8 @@
         <!-- A2dp Audio HAL -->
         <xi:include href="a2dpsink_audio_policy_configuration.xml"/>
 
-
+        <!-- Bluetooth Audio HAL -->
+        <xi:include href="bluetooth_audio_policy_configuration.xml"/>
 
         <!-- Remote Submix Audio HAL -->
         <module name="r_submix" halVersion="2.0">
