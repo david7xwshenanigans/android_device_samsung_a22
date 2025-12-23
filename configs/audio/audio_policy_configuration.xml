@@ -119,6 +119,9 @@
         <!-- Bluetooth Audio HAL -->
         <xi:include href="bluetooth_audio_policy_configuration.xml"/>
 
+        <!-- USB Audio HAL -->
+        <xi:include href="usb_audio_policy_configuration.xml"/>
+
         <!-- Remote Submix Audio HAL -->
         <module name="r_submix" halVersion="2.0">
 
