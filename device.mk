@@ -168,8 +168,10 @@ PRODUCT_PACKAGES += \
     libkeystore-engine-wifi-hidl
 
 # Lights
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/lights/android.hardware.light-service.a22.xml
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.a22
+    android.hardware.light-V2-ndk \
+    android.hardware.light-V2-ndk.vendor
 
 # Media
 PRODUCT_PACKAGES += \
@@ -358,7 +360,6 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@1.0.vendor \
     android.hardware.sensors-service.samsung-multihal
 
