@@ -1,6 +1,8 @@
 # GNSS
-
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.gnss@2\.0-service   u:object_r:hal_gnss_default_exec:s0
+
+# Light
+/(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.light-service                     u:object_r:hal_light_default_exec:s0
 
 # Sensors
 /dev/shub_data_injection                                            u:object_r:shub_device:s0

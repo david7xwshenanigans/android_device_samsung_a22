@@ -1048,8 +1048,12 @@ vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 
 # Lights
+vendor/bin/hw/vendor.samsung.hardware.light-service
+vendor/etc/init/lights-default-sec.rc
+vendor/etc/vintf/manifest/lights-default-sec.xml
 vendor/lib/hw/lights.mt6768.so
 vendor/lib64/hw/lights.mt6768.so
+vendor/lib64/vendor.samsung.hardware.light-V1-ndk_platform.so
 
 # LPM
 system/bin/lpm
