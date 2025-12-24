@@ -380,6 +380,7 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0.vendor
 
 # USB
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/android.hardware.usb@1.3-service.coral.xml
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3.vendor
 

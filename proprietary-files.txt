@@ -1602,7 +1602,6 @@ vendor/lib64/vendor.samsung.hardware.tlc.payment@1.0.so
 # USB
 vendor/bin/hw/android.hardware.usb@1.3-service.coral
 vendor/etc/init/android.hardware.usb@1.3-service.coral.rc
-vendor/etc/vintf/manifest/android.hardware.usb@1.3-service.coral.xml
 
 # Vaultkeeper
 vendor/bin/vaultkeeperd
