@@ -1330,7 +1330,6 @@ vendor/bin/md_monitor_ctrl
 vendor/bin/mrdump_tool
 vendor/bin/rcs_volte_stack
 vendor/bin/rttv
-vendor/bin/secril_config_svc
 vendor/bin/stp_dump3
 vendor/bin/volte_clientapi_ua
 vendor/bin/volte_rcs_ua

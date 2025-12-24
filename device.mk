@@ -308,7 +308,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.radio@1.6.vendor
+    android.hardware.radio@1.6.vendor \
+    secril_config_svc
 
 # Radio (IMS)
 PRODUCT_BOOT_JARS += \
