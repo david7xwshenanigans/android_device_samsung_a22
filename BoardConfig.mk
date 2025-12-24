@@ -102,6 +102,11 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 BOARD_USES_METADATA_PARTITION := true
 
+BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 1073741824 # Reserve some space in system and product for addons such as GApps
+BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 1073741824
+
+-include vendor/lineage/config/BoardConfigReservedSize.mk
+
 # Platform
 TARGET_BOARD_PLATFORM := mt6768
 BOARD_HAS_MTK_HARDWARE := true
