@@ -211,6 +211,7 @@ persist.vendor.radio.mtk_dsbp_support=2
 persist.vendor.radio.mtk_ps2_rat=L/W/G
 persist.vendor.radio.mtk_ps3_rat=G
 persist.vendor.radio.smart.data.switch=1
+persist.radio.multisim.config=dsds
 ro.radio.noril=no
 ro.telephony.default_cdma_sub=0
 ro.vendor.epdg.support=true

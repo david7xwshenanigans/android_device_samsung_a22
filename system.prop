@@ -82,6 +82,7 @@ persist.vendor.pms_removable=1
 persist.vendor.vilte_support=1
 persist.vendor.vzw_device_type=0
 persist.vendor.wfc.sys_wfc_support=1
+persist.radio.multisim.config=dsds
 
 # RIL
 vendor.rild.libpath=mtk-ril.so
