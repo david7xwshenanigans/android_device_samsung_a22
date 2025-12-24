@@ -106,10 +106,11 @@ ro.sys.usb.bicr=no
 ro.sys.usb.charging.only=no
 ro.sys.usb.mtp.whql.enable=1
 ro.sys.usb.storage.type=mtp,mass_storage
-persist.sys.usb.config = mtp,adb
-sys.usb.config         = mtp,adb
-sys.usb.state          = mtp,adb
-storage.support.usb    = 1
+persist.sys.usb.config=mtp,adb
+sys.usb.configfs=1
+sys.usb.config=mtp,adb
+sys.usb.state=mtp,adb
+storage.support.usb=1
 
 
 # Wi-Fi
