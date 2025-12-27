@@ -75,6 +75,28 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz
 
 BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(DEVICE_PATH)-kernel/vendor-modules/*.ko)
 
+# Kernel specific flags
+KERNEL_NO_GCC := true
+TARGET_KERNEL_ADDITIONAL_FLAGS := \
+  ARCH=arm64 \
+  SUBARCH=arm64 \
+  LLVM=1 \
+  LLVM_IAS=1 \
+  CC=clang \
+  LD=ld.lld \
+  AR=llvm-ar \
+  NM=llvm-nm \
+  OBJCOPY=llvm-objcopy \
+  OBJDUMP=llvm-objdump \
+  STRIP=llvm-strip \
+  CLANG_TRIPLE=aarch64-linux-gnu- \
+  CROSS_COMPILE=aarch64-linux-gnu- \
+  CROSS_COMPILE_ARM32=arm-linux-gnueabi- \
+  CROSS_COMPILE_COMPAT=arm-linux-gnueabi- \
+  INSTALL_MOD_STRIP=1 \
+  CONFIG_SECTION_MISMATCH_WARN_ONLY=y \
+  KCFLAGS=-w
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
