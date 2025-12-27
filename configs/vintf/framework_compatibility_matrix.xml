@@ -369,14 +369,6 @@
     </interface>
 </hal>
 <hal format="hidl" optional="true">
-    <name>vendor.samsung.hardware.hqm</name>
-    <version>1.0</version>
-    <interface>
-        <name>ISehHqm</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
     <name>vendor.samsung.hardware.miscpower</name>
     <version>2.0</version>
     <interface>
@@ -421,14 +413,7 @@
         <instance>slot2</instance>
     </interface>
 </hal>
-<hal format="hidl" optional="true">
-    <name>vendor.samsung.hardware.security.drk</name>
-    <version>2.0</version>
-    <interface>
-        <name>ISehDrk</name>
-        <instance>default</instance>
-    </interface>
-</hal>
+
 <hal format="hidl" optional="true">
     <name>vendor.samsung.hardware.security.widevine.keyprov</name>
     <version>1.0</version>
@@ -457,30 +442,6 @@
     <version>1.0</version>
     <interface>
         <name>ISehThermal</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>vendor.samsung.hardware.tlc.iccc</name>
-    <version>1.0</version>
-    <interface>
-        <name>ISehIccc</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>vendor.samsung.hardware.tlc.kg</name>
-    <version>1.0-1</version>
-    <interface>
-        <name>ISehKg</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>vendor.samsung.hardware.tlc.payment</name>
-    <version>1.0</version>
-    <interface>
-        <name>ISehTlcPayment</name>
         <instance>default</instance>
     </interface>
 </hal>

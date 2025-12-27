@@ -246,7 +246,6 @@ ro.vendor.sim_me_lock_mode=0
 vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
 
 # Security
-ro.security.cass.feature=1
 ro.security.keystore.keytype=sakv2,gak,
 ro.security.vpnpp.release=1.0
 ro.security.vpnpp.ver=2.4
