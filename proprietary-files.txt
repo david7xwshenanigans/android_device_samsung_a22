@@ -1324,7 +1324,6 @@ vendor/bin/doeapp-memtester
 vendor/bin/doeapp-sat
 vendor/bin/dtc_vendor
 vendor/bin/factory
-vendor/bin/loghidlvendorservice
 vendor/bin/md_monitor
 vendor/bin/md_monitor_ctrl
 vendor/bin/mrdump_tool
@@ -1336,9 +1335,7 @@ vendor/bin/volte_rcs_ua
 vendor/etc/init/init.cccimdinit.rc
 vendor/etc/init/init.cccirpcd.rc
 vendor/etc/init/init.vendor.rilcommon.rc
-vendor/etc/init/loghidlvendorservice.rc
 vendor/etc/init/md_monitor.rc
-vendor/etc/init/mtklog.rc
 vendor/etc/init/vendor.sem.rilchip.rc
 vendor/etc/init/volte_clientapi_ua.rc
 vendor/etc/init/volte_rcs_ua.rc
@@ -1398,7 +1395,6 @@ vendor/lib64/libsimmelock.so
 vendor/lib64/libsysenv.so
 vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
 vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so
-vendor/lib64/vendor.mediatek.hardware.log@1.0.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so
 vendor/lib64/vendor.samsung.hardware.radio.bridge@2.1.so
@@ -1679,7 +1675,6 @@ system_ext/lib64/libpcap_bak.so
 system_ext/lib64/libteeservice_client.trustonic.so
 system_ext/lib64/libtflite_mtk.mtk.so
 system_ext/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
-system_ext/lib64/vendor.mediatek.hardware.log@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.meta@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 vendor/bin/add.pb
