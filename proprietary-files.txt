@@ -888,18 +888,7 @@ vendor/lib64/liboemcrypto.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
 
 # Engineermode
-vendor/bin/emservice
-vendor/bin/vendor.samsung.hardware.security.engmode@1.0-service
-vendor/etc/init/emservice.rc
-vendor/etc/init/vendor.samsung.hardware.security.engmode@1.0-service.rc
-vendor/lib/libstork_shared.so
-vendor/lib64/libengmode15.so
-vendor/lib64/libengmode2lite.so
 vendor/lib64/libengmode_client.so
-vendor/lib64/libengmode_server.so
-vendor/lib64/libengmode_tlc.so
-vendor/lib64/libstork_shared.so
-vendor/lib64/vendor.samsung.hardware.security.engmode@1.0.so
 
 # Fingerprint
 vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@3.0-service
@@ -1310,11 +1299,6 @@ vendor/lib64/libpowerhalwrap_vendor.so
 vendor/lib64/vendor.mediatek.hardware.power@1.1.so
 vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 
-# Power (samsung)
-vendor/bin/hw/vendor.samsung.hardware.miscpower@2.0-service
-vendor/etc/init/vendor.samsung.hardware.miscpower@2.0-service.rc
-vendor/lib64/vendor.samsung.hardware.miscpower@2.0.so
-
 # Radio|IMS
 vendor/bin/hw/rild
 vendor/bin/AgentTest
@@ -1444,14 +1428,8 @@ vendor/etc/saiv/image_understanding/db/aic_detector/aic_detector_cnn.info
 vendor/etc/saiv/image_understanding/db/aic_detector/aic_detector_cnn_light.caffemodel
 
 # Samsung
-vendor/bin/vendor.samsung.hardware.security.widevine.keyprov@1.0-service
-vendor/etc/init/vendor.samsung.hardware.security.widevine.keyprov@1.0-service.rc
 vendor/etc/permissions/vendor.samsung.hardware.telephony.gsm.xml
--vendor/etc/vintf/manifest/manifest_vendor.samsung.hardware.security.widevine.keyprov@1.0-service.xml
 vendor/lib64/lib_SamsungRec_07010.so
-vendor/lib64/vendor.samsung.frameworks.security.dsms@1.0.so
-vendor/lib64/vendor.samsung.hardware.security.drk@2.0.so
-vendor/lib64/vendor.samsung.hardware.security.widevine.keyprov@1.0.so
 
 # Sensors
 vendor/lib/librgbwlightsensor.so
@@ -1680,10 +1658,8 @@ system_ext/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 vendor/bin/add.pb
 vendor/bin/dconfig
 vendor/bin/dexecutor
-vendor/bin/dsmsca
 vendor/bin/fsdbg_vendor
 vendor/bin/iod
-vendor/bin/meta_tst
 vendor/bin/mt6660_calibration
 vendor/bin/mtk_pkm_service
 vendor/bin/recordevent
@@ -1692,7 +1668,6 @@ vendor/bin/rt5512_calibration
 vendor/bin/storkd
 vendor/bin/test_model.json
 vendor/bin/wvkprov
-vendor/etc/init/dsmsca.rc
 vendor/etc/init/init.fpsgo.rc
 vendor/etc/init/init.vendor.onebinary.rc
 vendor/etc/init/init.vendor.sysfw.rc
@@ -1753,8 +1728,6 @@ vendor/lib64/libSemTelephonyProps.so
 vendor/lib64/libabfadp.so
 vendor/lib64/libcomposer_ext.so
 vendor/lib64/libdeccfg.so
-vendor/lib64/libdk_vnd_service_core.so
-vendor/lib64/libdsms_vendor.so
 vendor/lib64/libfloatingfeature.so
 vendor/lib64/libformatConverter.unifunc.so
 vendor/lib64/libminiui.so
@@ -1784,5 +1757,4 @@ vendor/lib64/libvkservice.so
 vendor/lib64/unihal_cutils@2.1.so
 vendor/lib64/unihal_main@2.1.so
 vendor/lib64/unihal_uniplugin@1.0.so
-vendor/lib64/vendor.mediatek.hardware.meta@1.0.so
 vendor/lib64/vintf-codecsolution-V2-ndk_platform.so

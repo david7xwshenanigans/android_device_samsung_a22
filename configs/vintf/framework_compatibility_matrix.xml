@@ -16,14 +16,6 @@
     </interface>
 </hal>
 <hal format="hidl" optional="true">
-    <name>android.hardware.bluetooth.audio</name>
-    <version>2.0-1</version>
-    <interface>
-        <name>IBluetoothAudioProvidersFactory</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
     <name>android.hardware.drm</name>
     <version>1.0-4</version>
     <interface>
@@ -202,14 +194,6 @@
     </interface>
 </hal>
 <hal format="hidl" optional="true">
-    <name>vendor.mediatek.hardware.meta</name>
-    <version>1.0</version>
-    <interface>
-        <name>IMetaTst</name>
-        <instance>MetaATDHidlServer</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
     <name>vendor.mediatek.hardware.mmagent</name>
     <version>1.0-1</version>
     <interface>
@@ -361,22 +345,6 @@
     </interface>
 </hal>
 <hal format="hidl" optional="true">
-    <name>vendor.samsung.hardware.security.engmode</name>
-    <version>1.0</version>
-    <interface>
-        <name>ISehEngmode</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>vendor.samsung.hardware.miscpower</name>
-    <version>2.0</version>
-    <interface>
-        <name>ISehMiscPower</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
     <name>vendor.samsung.hardware.nfc</name>
     <version>2.0</version>
     <interface>
@@ -411,15 +379,6 @@
         <name>ISehRadio</name>
         <instance>slot1</instance>
         <instance>slot2</instance>
-    </interface>
-</hal>
-
-<hal format="hidl" optional="true">
-    <name>vendor.samsung.hardware.security.widevine.keyprov</name>
-    <version>1.0</version>
-    <interface>
-        <name>ISehWidevineKeyProvisioning</name>
-        <instance>default</instance>
     </interface>
 </hal>
 <hal format="aidl" optional="true">

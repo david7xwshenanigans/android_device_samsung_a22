@@ -297,16 +297,6 @@
         <fqname>@1.0::IMDMonitorService/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.mediatek.hardware.meta</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IMetaTst</name>
-            <instance>MetaATDHidlServer</instance>
-        </interface>
-        <fqname>@1.0::IMetaTst/MetaATDHidlServer</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.mediatek.hardware.mmagent</name>
         <transport>hwbinder</transport>
         <version>1.1</version>
@@ -482,16 +472,6 @@
         <fqname>@2.0::ISehGnss/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.samsung.hardware.miscpower</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>ISehMiscPower</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.0::ISehMiscPower/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.samsung.hardware.radio</name>
         <transport>hwbinder</transport>
         <version>2.2</version>
@@ -530,16 +510,6 @@
         <fqname>@2.0::ISehChannel/epdgd2</fqname>
         <fqname>@2.0::ISehChannel/imsd</fqname>
         <fqname>@2.0::ISehChannel/imsd2</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.samsung.hardware.security.engmode</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISehEngmode</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ISehEngmode/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.sysinput</name>
