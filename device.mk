@@ -89,7 +89,6 @@ PRODUCT_COPY_FILES += \
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images_vendor \
-    product_charger_res_images_vendor \
     libsuspend
 
 # Disable priv-app property whitelist
