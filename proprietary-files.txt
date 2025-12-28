@@ -1045,8 +1045,6 @@ vendor/lib64/hw/lights.mt6768.so
 vendor/lib64/vendor.samsung.hardware.light-V1-ndk_platform.so
 
 # LPM
-system/bin/lpm
-system/etc/init/init.sec-charger.rc
 system/lib64/libmaet.so
 system/lib64/libshowlogo.so
 system/lib64/libsxqk_skia.so
