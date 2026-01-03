@@ -55,6 +55,14 @@ fi
 
 function blob_fixup {
     case "$1" in
+        # Fix GraphicBufferMapper symbols for Media Codecs
+        vendor/lib*/libcodec2_vndk.so)
+            "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
+            ;;
+        # Fix GraphicBufferMapper symbols for Camera UniHAL
+        vendor/lib64/unihal_main@2.1.so)
+            "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
+            ;;
         vendor/bin/hw/android.hardware.media.c2@1.2-mediatek|vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
            "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
             ;;

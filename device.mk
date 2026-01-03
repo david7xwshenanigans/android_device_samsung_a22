@@ -75,7 +75,10 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    libgui_vendor
+    libgui_vendor \
+    libexif \
+    libexif.vendor \
+    libpng.vendor
 
 # CAS
 PRODUCT_PACKAGES += \
@@ -103,7 +106,8 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.mapper@2.1.vendor \
     android.hardware.graphics.mapper@3.0.vendor \
-    android.hardware.graphics.mapper@4.0.vendor
+    android.hardware.graphics.mapper@4.0.vendor \
+    libvulkan
 
 PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.mediatek-mali
@@ -119,8 +123,8 @@ PRODUCT_PACKAGES += \
     libdrm.vendor\
     libdrmclearkeyplugin \
     libmockdrmcryptoplugin \
-    libz_stable.vendor
-    # libprotobuf-cpp-lite-3.9.1-vendorcompat \
+    libz_stable.vendor \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat
 
 # Dumpstate
 PRODUCT_PACKAGES += \
@@ -311,9 +315,23 @@ PRODUCT_COPY_FILES += \
 
 # Radio
 PRODUCT_PACKAGES += \
+    android.hardware.radio@1.0.vendor \
+    android.hardware.radio@1.1.vendor \
+    android.hardware.radio@1.2.vendor \
+    android.hardware.radio@1.3.vendor \
+    android.hardware.radio@1.4.vendor \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio@1.6.vendor \
+    android.hardware.radio.config@1.0.vendor \
+    android.hardware.radio.config@1.1.vendor \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.radio@1.6.vendor \
+    android.hardware.radio-V1.4-java \
+    libsqlite.vendor \
+    libjsoncpp.vendor \
+    librilutils \
+    libxml2.vendor \
+    libprotobuf-cpp-full-3.9.1-vendorcompat \
     secril_config_svc
 
 # Radio (IMS)
@@ -363,9 +381,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
+# Shims
+PRODUCT_PACKAGES += \
+    libui_shim.vendor
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0 \
+    android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@1.0.vendor \
     android.hardware.sensors-service.samsung-multihal
 
@@ -404,25 +427,24 @@ PRODUCT_COPY_FILES += \
     prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidlbase-v31.so \
     prebuilts/vndk/v33/arm64/arch-arm-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_foundation-v33.so \
     prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v31.so \
-    prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/llndk-stub/liblog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblog-v31.so
+    prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/llndk-stub/liblog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblog-v31.so \
     prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v32.so \
     prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_foundation-v33.so
 
 PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.config@1.0.vendor \
-    android.hardware.tetheroffload.control@1.1.vendor
+    android.hardware.tetheroffload.control@1.1.vendor \
+    libnetutils.vendor
 
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0.vendor \
-    android.hardware.wifi@1.1.vendor \
-    android.hardware.wifi@1.2.vendor \
-    android.hardware.wifi@1.3.vendor \
-    android.hardware.wifi@1.4.vendor \
-    android.hardware.wifi@1.5.vendor \
-    android.hardware.wifi@1.6.vendor \
+    android.hardware.wifi-service \
     hostapd \
     wpa_supplicant \
-    android.hardware.wifi@1.0-service
+    libwifi-hal-wrapper \
+    libcurl \
+    libcurl.vendor \
+    libexpat \
+    libexpat.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/vendor_hals/mtk.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_hals/mtk.xml \

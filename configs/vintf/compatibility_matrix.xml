@@ -4,10 +4,6 @@
         <version>1.0</version>
     </hal>
     <hal format="hidl" optional="false">
-        <name>android.frameworks.sensorservice</name>
-        <version>1.0</version>
-    </hal>
-    <hal format="hidl" optional="false">
         <name>android.hidl.allocator</name>
         <version>1.0</version>
     </hal>
