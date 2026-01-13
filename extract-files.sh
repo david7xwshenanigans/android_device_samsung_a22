@@ -55,6 +55,30 @@ fi
 
 function blob_fixup {
     case "$1" in
+        vendor/etc/init/vendor.samsung.hardware.camera.provider@4.0-service_64_mtk.rc)
+            sed -i \
+                -e '/^[[:space:]]*interface[[:space:]]\+vendor\.samsung\.hardware\.camera\.provider@4\.0::ISehCameraProvider[[:space:]]\+legacy\/0$/d' \
+                -e '/^[[:space:]]*interface[[:space:]]\+vendor\.mediatek\.hardware\.camera\.isphal@1\.0::IISPModule[[:space:]]\+internal\/0$/d' \
+                "$2"
+            ;;
+        vendor/etc/init/md_monitor.rc)
+            sed -i '/^[[:space:]]*interface[[:space:]]\+vendor\.mediatek\.hardware\.mdmonitor@1\.0::IMDMonitorService[[:space:]]\+default$/d' "$2"
+            ;;
+        vendor/etc/init/dmc_core.rc)
+            sed -i '/^[[:space:]]*interface[[:space:]]/d' "$2"
+            ;;
+        vendor/etc/init/nxp.android.hardware.nfc@1.2-service.rc)
+            sed -i '/vendor\.samsung\.hardware\.nfc@2\.0::ISehNfc/d' "$2"
+            ;;
+        vendor/lib64/nfc_nci_nxpsn.so)
+            "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
+            ;;
+        vendor/lib64/libnvram.so|vendor/lib64/libsysenv.so)
+            "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
+            ;;
+        vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron)
+            "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
+            ;;
         # Fix GraphicBufferMapper symbols for Media Codecs
         vendor/lib*/libcodec2_vndk.so)
             "${PATCHELF}" --add-needed "libui_shim.so" "${2}"

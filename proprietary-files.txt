@@ -1275,27 +1275,16 @@ vendor/lib64/libnvram_sec.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 
+
 # Power
-vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
 vendor/etc/init/bootperf.rc
-vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
-vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
-vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
-vendor/lib/libmtkperf_client_vendor.so
-vendor/lib/libperfctl_vendor.so
 vendor/lib/libpixelflinger.so
 vendor/lib/libpower_timer.so
-vendor/lib/libpowerhal.so
-vendor/lib/libpowerhalwrap_vendor.so
-vendor/lib64/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
-vendor/lib64/libmtkperf_client_vendor.so
-vendor/lib64/libperfctl_vendor.so
 vendor/lib64/libpixelflinger.so
 vendor/lib64/libpower_timer.so
-vendor/lib64/libpowerhal.so
-vendor/lib64/libpowerhalwrap_vendor.so
 vendor/lib64/vendor.mediatek.hardware.power@1.1.so
 vendor/lib64/vendor.mediatek.hardware.power@2.0.so
+
 
 # Radio|IMS
 vendor/bin/hw/rild
@@ -1626,7 +1615,6 @@ system_ext/lib64/libarmnn_ndk.mtk.so
 system_ext/lib64/libaudiocompensationfilter.so
 system_ext/lib64/libaudiotoolkit.so
 system_ext/lib64/libcmdl_ndk.mtk.so
-system_ext/lib64/libcomposer_ext.so
 system_ext/lib64/libdrmmtkutil.so
 system_ext/lib64/libdrmmtkwhitelist.so
 system_ext/lib64/libmcv_runtime_usdk.mtk.so
@@ -1650,7 +1638,6 @@ system_ext/lib64/libnir_neon_driver_ndk.mtk.so
 system_ext/lib64/libpcap_bak.so
 system_ext/lib64/libteeservice_client.trustonic.so
 system_ext/lib64/libtflite_mtk.mtk.so
-system_ext/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.meta@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 vendor/bin/add.pb
@@ -1715,6 +1702,7 @@ vendor/lib/libsnaace.so
 vendor/lib/libsnamrnb.so
 vendor/lib/libsnamrwb.so
 vendor/lib/libuuid.so
+vendor/lib/libstork_shared.so
 vendor/lib/unihal_cutils@2.1.so
 vendor/lib/unihal_main@2.1.so
 vendor/lib/unihal_uniplugin@1.0.so
@@ -1752,6 +1740,7 @@ vendor/lib64/libtvm_wrapper.so
 vendor/lib64/libuuid.so
 vendor/lib64/libvkmanager_vendor.so
 vendor/lib64/libvkservice.so
+vendor/lib64/libstork_shared.so
 vendor/lib64/unihal_cutils@2.1.so
 vendor/lib64/unihal_main@2.1.so
 vendor/lib64/unihal_uniplugin@1.0.so

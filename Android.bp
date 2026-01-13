@@ -1,2 +1,7 @@
 soong_namespace {
+    imports: [
+        "hardware/samsung_ext/interfaces",
+        "hardware/mediatek/interfaces",
+		"hardware/lineage/compat",
+    ],
 }

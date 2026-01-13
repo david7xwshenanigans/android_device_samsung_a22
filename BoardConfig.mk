@@ -60,7 +60,7 @@ BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 TARGET_SCREEN_DENSITY := 320
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_a22
+$(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):libinit_a22)
 TARGET_RECOVERY_DEVICE_MODULES := libinit_a22
 
 # Kernel specific flags
@@ -83,6 +83,7 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := \
   INSTALL_MOD_STRIP=1 \
   CONFIG_SECTION_MISMATCH_WARN_ONLY=y \
   KCFLAGS=-w
+
 # Kernel
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
@@ -93,8 +94,7 @@ TARGET_KERNEL_SOURCE := kernel/samsung/a22
 TARGET_KERNEL_CLANG_VERSION := r416183b
 TARGET_KERNEL_CLANG_PATH := $(abspath .)/prebuilts/clang/kernel/$(HOST_PREBUILT_TAG)/clang-$(TARGET_KERNEL_CLANG_VERSION)
 BOARD_KERNEL_IMAGE_NAME := Image.gz
-
-BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(DEVICE_PATH)-kernel/vendor-modules/*.ko)
+TARGET_KERNEL_USE_16K_PAGES := false
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
@@ -120,14 +120,13 @@ BOARD_RAMDISK_USE_LZ4 := true
 TARGET_COPY_OUT_ODM := odm
 TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_VENDOR := vendor
-
 BOARD_USES_METADATA_PARTITION := true
 
 BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 1073741824 # Reserve some space in system and product for addons such as GApps
 BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 1073741824
 
 -include vendor/lineage/config/BoardConfigReservedSize.mk
-
+AB_OTA_UPDATER := false
 # Platform
 TARGET_BOARD_PLATFORM := mt6768
 BOARD_HAS_MTK_HARDWARE := true
@@ -139,7 +138,7 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6768
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
@@ -181,6 +180,10 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/manifest.xml
 DEVICE_MATRIX_FILE += $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml
 
+# Graphics
+TARGET_USES_ION := true
+BOARD_FSGEN_DISABLE := true
+
 # VNDK
 BOARD_VNDK_VERSION := current
 
@@ -197,6 +200,5 @@ WIFI_DRIVER_STATE_ON := "1"
 WIFI_DRIVER_STATE_OFF := "0"
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
-
 # Inherit the proprietary files
 include vendor/samsung/a22/BoardConfigVendor.mk
