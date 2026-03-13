@@ -5,3 +5,35 @@ soong_namespace {
 		"hardware/lineage/compat",
     ],
 }
+
+prebuilt_hidl_interfaces {
+    name: "hidl_samsung_nfc_interface",
+    interfaces: [
+        "vendor.samsung.hardware.nfc@2.0::ISehNfc",
+    ],
+}
+
+prebuilt_hidl_interfaces {
+    name: "hidl_dmc_core_interface",
+    interfaces: [
+        "vendor.mediatek.hardware.apmonitor@2.0::IApmService",
+        "vendor.mediatek.hardware.dmc@1.0::IDmcService",
+        "vendor.mediatek.hardware.dmc@1.1::IDmcService",
+        "vendor.mediatek.hardware.dmc@1.2::IDmcService",
+    ],
+}
+
+prebuilt_hidl_interfaces {
+     name: "hidl_mdmonitor_interface",
+     interfaces: [
+         "vendor.mediatek.hardware.mdmonitor@1.0::IMDMonitorService",
+     ],
+}
+
+prebuilt_hidl_interfaces {
+    name: "hidl_camera_interface",
+    interfaces: [
+        "vendor.mediatek.hardware.camera.isphal@1.0::IISPModule",
+        "vendor.samsung.hardware.camera.provider@4.0::ISehCameraProvider",
+    ],
+}

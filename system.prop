@@ -11,6 +11,10 @@ ro.audio.silent=0
 ro.audio.spatializer_enabled=true
 ro.audio.usb.period_us=16000
 
+# Blur
+ro.sf.blurs_are_expensive=1
+ro.surface_flinger.supports_background_blur=1
+
 # Camera
 ro.camera.sound.forced=0
 
@@ -88,13 +92,20 @@ vendor.rild.libpath=mtk-ril.so
 vendor.rild.libargs=-d /dev/ttyC0
 
 # SurfaceFlinger
+ro.surface_flinger.use_content_detection_for_refresh_rate=false
+ro.surface_flinger.set_idle_timer_ms=-1
+ro.surface_flinger.set_touch_timer_ms=-1
+ro.surface_flinger.set_display_power_timer_ms=-1
 ro.surface_flinger.has_HDR_display=false
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.enable_transaction_tracing=false
+ro.config.low_ram=false
+debug.hwui.level=high
 
 # Telephony
 ro.telephony.iwlan_operation_mode=legacy
 ro.vendor.mtk_telephony_add_on_policy=0
+ro.telephony.sim_slots.count=2
 
 # Temporary enables NAV bar (soft keys)
 qemu.hw.mainkeys=0
