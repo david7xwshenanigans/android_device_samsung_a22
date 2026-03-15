@@ -56,3 +56,28 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     check_elf_files: false,
 }
+
+cc_prebuilt_library_shared {
+    name: "libstagefright_bufferqueue_helper-v31",
+    vendor: true,
+    target: {
+        android_arm64: {
+            srcs: ["v31/lib64/libstagefright_bufferqueue_helper.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+}
+
+// VNDK compat for vendor blobs (v32)
+cc_prebuilt_library_shared {
+    name: "android.system.keystore2-V1-ndk_platform",
+    vendor: true,
+    target: {
+        android_arm64: {
+            srcs: ["v32/lib64/android.system.keystore2-V1-ndk_platform.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+}

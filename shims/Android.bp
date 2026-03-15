@@ -1,0 +1,9 @@
+cc_library_shared {
+    name: "libgraphicbuffersource_shim",
+    stl: "libc++",
+    srcs: ["GraphicBufferSource.cpp"],
+    shared_libs: [
+        "libutils",
+    ],
+    vendor: true,
+}

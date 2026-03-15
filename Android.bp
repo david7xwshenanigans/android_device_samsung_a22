@@ -1,9 +1,4 @@
 soong_namespace {
-    imports: [
-        "hardware/samsung_ext/interfaces",
-        "hardware/mediatek/interfaces",
-		"hardware/lineage/compat",
-    ],
 }
 
 prebuilt_hidl_interfaces {
@@ -35,5 +30,30 @@ prebuilt_hidl_interfaces {
     interfaces: [
         "vendor.mediatek.hardware.camera.isphal@1.0::IISPModule",
         "vendor.samsung.hardware.camera.provider@4.0::ISehCameraProvider",
+    ],
+}
+
+prebuilt_hidl_interfaces {
+    name: "hidl_samsung_wifi_supplicant_interface",
+    interfaces: [
+        "vendor.samsung.hardware.wifi.supplicant@3.0::ISehSupplicant",
+        "vendor.samsung.hardware.wifi.supplicant@3.1::ISehSupplicant",
+    ],
+}
+
+prebuilt_hidl_interfaces {
+    name: "hidl_samsung_wifi_hostapd_interface",
+    interfaces: [
+        "vendor.samsung.hardware.wifi.hostapd@4.0::ISehHostapd",
+    ],
+}
+
+prebuilt_hidl_interfaces {
+    name: "hidl_samsung_wifi_interface",
+    interfaces: [
+        "vendor.samsung.hardware.wifi@2.0::ISehWifi",
+        "vendor.samsung.hardware.wifi@2.1::ISehWifi",
+        "vendor.samsung.hardware.wifi@2.2::ISehWifi",
+        "vendor.samsung.hardware.wifi@2.3::ISehWifi",
     ],
 }

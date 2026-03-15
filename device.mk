@@ -13,6 +13,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+$(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
+
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
@@ -23,7 +27,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek/libmtkperf_client \
     hardware/samsung \
     hardware/samsung_ext \
-    hardware/lineage/compat
+    hardware/lineage/compat \
+    hardware/mediatek/wlan/wifi_hal
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -38,7 +43,12 @@ PRODUCT_PACKAGES += \
     libaudioclient_aidl_conversion \
     libaudiofoundation.vendor \
     libbluetooth_audio_session \
-    spatializer-aidl-cpp.vendor
+    spatializer-aidl-cpp.vendor \
+    libopus.vendor \
+    libstagefright_amrnb_common.vendor \
+    libstagefright_enc_common.vendor \
+    libstagefright_flacdec.vendor \
+    libvorbisidec.vendor
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
@@ -60,11 +70,10 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3.vendor
 
 PRODUCT_PACKAGES += \
-    BesLoudness
-#    MtkInCallService
+    MtkInCallService
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hardware.audio.primary=default
+    ro.hardware.audio.primary=mtk
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/a2dpsink_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dpsink_audio_policy_configuration.xml \
@@ -89,6 +98,13 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1.vendor
 
 # Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.device@3.6.vendor \
+    android.hardware.camera.provider@2.6.vendor \
+    android.frameworks.cameraservice.common@2.0.vendor \
+    android.frameworks.cameraservice.device@2.1.vendor \
+    android.frameworks.cameraservice.service@2.2.vendor
+
 PRODUCT_PACKAGES += \
     libcamera_metadata.vendor \
     libgui_vendor \
@@ -175,9 +191,8 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-impl.recovery \
-    android.hardware.health@2.1-service
+    android.hardware.health-service.mediatek \
+    android.hardware.health-service.mediatek-recovery
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -219,10 +234,11 @@ PRODUCT_COPY_FILES += \
 
 # NDK
 PRODUCT_PACKAGES += \
-    android.hardware.light-V1-ndk_platform.vendor \
-    android.hardware.power-V2-ndk_platform.vendor \
-    android.hardware.vibrator-V2-ndk_platform.vendor \
-    android.hardware.common-V2-ndk_platform.vendor
+    android.hardware.light-V1-ndk.vendor \
+    android.hardware.power-V2-ndk.vendor \
+    android.hardware.power-V6-ndk.vendor \
+    android.hardware.vibrator-V2-ndk.vendor \
+    android.hardware.common-V2-ndk.vendor
 
 # Neural Networks
 PRODUCT_PACKAGES += \
@@ -244,6 +260,12 @@ PRODUCT_COPY_FILES += \
 # Network tools
 PRODUCT_PACKAGES += \
     libpcap
+
+PRODUCT_PACKAGES += \
+    libc.vendor \
+    libm.vendor \
+    libdl.vendor \
+    libnetutils.vendor
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -369,6 +391,11 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.telephony.use_legacy_mtk_ril=true \
+    persist.radio.legacy=true \
+    ro.radio.noril=false
+
 # RenderScript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
@@ -411,7 +438,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libui_shim.vendor \
     libbase_shim \
-    libprocessgroup_shim
+    libprocessgroup_shim \
+    libgraphicbuffersource_shim
 
 
 # Sensors
@@ -447,7 +475,10 @@ PRODUCT_PACKAGES += \
     libutils-v31 \
     libutils-v32 \
     liblog-v31 \
-    libstagefright_foundation-v33
+    libstagefright_bufferqueue_helper-v31 \
+    libstagefright_foundation-v33 \
+    android.system.keystore2-V1-ndk_platform \
+    libnl
 
 PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.config@1.0.vendor \
@@ -458,11 +489,22 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     hostapd \
     wpa_supplicant \
-    libwifi-hal-wrapper \
+    libwifi-hal-mediatek \
+    lib_driver_cmd_mt66xx \
     libcurl \
     libcurl.vendor \
     libexpat \
     libexpat.vendor
+
+# Libs
+PRODUCT_PACKAGES += \
+    libstagefright_amrnb_common \
+    libstagefright_enc_common \
+    libstagefright_flacdec \
+    libstagefright_foundation \
+    libstagefright_softomx \
+    libvorbisidec \
+    libxml2
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/vendor_hals/mtk.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_hals/mtk.xml \

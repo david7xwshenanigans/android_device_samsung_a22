@@ -739,37 +739,9 @@ vendor/lib64/vendor.samsung.hardware.camera.provider@4.0-legacy.so
 vendor/lib64/vendor.samsung.hardware.camera.provider@4.0.so
 
 # Camera (samsung)
-vendor/lib/android.frameworks.cameraservice.common@2.0.so
-vendor/lib/android.frameworks.cameraservice.device@2.0.so
-vendor/lib/android.frameworks.cameraservice.device@2.1.so
-vendor/lib/android.frameworks.cameraservice.service@2.0.so
-vendor/lib/android.frameworks.cameraservice.service@2.1.so
-vendor/lib/android.frameworks.cameraservice.service@2.2.so
-vendor/lib/android.hardware.camera.common@1.0.so
-vendor/lib/android.hardware.camera.device@1.0.so
-vendor/lib/android.hardware.camera.device@3.2.so
-vendor/lib/android.hardware.camera.device@3.3.so
-vendor/lib/android.hardware.camera.device@3.4.so
-vendor/lib/android.hardware.camera.provider@2.4.so
 vendor/lib/camera.device@3.2-impl.so
 vendor/lib/camera.device@3.3-impl.so
 vendor/lib/camera.device@3.4-impl.so
-vendor/lib64/android.frameworks.cameraservice.common@2.0.so
-vendor/lib64/android.frameworks.cameraservice.device@2.0.so
-vendor/lib64/android.frameworks.cameraservice.device@2.1.so
-vendor/lib64/android.frameworks.cameraservice.service@2.0.so
-vendor/lib64/android.frameworks.cameraservice.service@2.1.so
-vendor/lib64/android.frameworks.cameraservice.service@2.2.so
-vendor/lib64/android.hardware.camera.common@1.0.so
-vendor/lib64/android.hardware.camera.device@1.0.so
-vendor/lib64/android.hardware.camera.device@3.2.so
-vendor/lib64/android.hardware.camera.device@3.3.so
-vendor/lib64/android.hardware.camera.device@3.4.so
-vendor/lib64/android.hardware.camera.device@3.5.so
-vendor/lib64/android.hardware.camera.device@3.6.so
-vendor/lib64/android.hardware.camera.provider@2.4.so
-vendor/lib64/android.hardware.camera.provider@2.5.so
-vendor/lib64/android.hardware.camera.provider@2.6.so
 vendor/lib64/camera.device@1.0-impl.so
 vendor/lib64/camera.device@3.2-impl.so
 vendor/lib64/camera.device@3.3-impl.so
@@ -1180,6 +1152,18 @@ vendor/lib/libMtkOmxCore.so
 vendor/lib/libMtkOmxGsmDec.so
 vendor/lib/libMtkOmxMp3Dec.so
 vendor/lib/libstagefright_omx_vendor.so
+vendor/lib/libstagefright_soft_aacdec.so
+vendor/lib/libstagefright_soft_aacenc.so
+vendor/lib/libstagefright_soft_amrdec.so
+vendor/lib/libstagefright_soft_amrnbenc.so
+vendor/lib/libstagefright_soft_amrwbenc.so
+vendor/lib/libstagefright_soft_flacdec.so
+vendor/lib/libstagefright_soft_flacenc.so
+vendor/lib/libstagefright_soft_g711dec.so
+vendor/lib/libstagefright_soft_mp3dec.so
+vendor/lib/libstagefright_soft_opusdec.so
+vendor/lib/libstagefright_soft_rawdec.so
+vendor/lib/libstagefright_soft_vorbisdec.so
 vendor/lib64/libMtkOmxCore.so
 vendor/lib64/libsomxcmn.so
 
@@ -1395,7 +1379,7 @@ vendor/etc/virtual-spn-conf-by-efspn.xml
 vendor/etc/virtual-spn-conf-by-imsi.xml
 
 # Radio (IMS)
-system/framework/mediatek-common.jar
+system/framework/mediatek-common.jar;PREFER
 system/framework/mediatek-framework.jar
 system/framework/mediatek-ims-base.jar
 # system/priv-app/imsservice/imsservice.apk|9d88ea1e52476f6efb8c0031c951b70e32c8f662
@@ -1574,12 +1558,13 @@ vendor/lib/libapmonitor_vendor.so
 vendor/lib/meta_wifi_data.so
 vendor/lib/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib/vendor.mediatek.hardware.mdmonitor@1.0.so
-vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
 vendor/lib64/libapmonitor_vendor.so
 vendor/lib64/libforkexecwrap.so
 vendor/lib64/meta_wifi_data.so
 vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
+
+# VINTF (bluetooth + others)
 
 # Misc
 system_ext/lib/libaed.so

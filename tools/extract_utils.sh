@@ -17,6 +17,7 @@ PRODUCT_PACKAGES_DEST=()
 PRODUCT_PACKAGES_ARGS=()
 PRODUCT_SYMLINKS_LIST=()
 PACKAGE_LIST=()
+VENDOR_IMPORTS=()
 REQUIRED_PACKAGES_LIST=
 EXTRACT_SRC=
 EXTRACT_STATE=-1
@@ -31,6 +32,18 @@ KEEP_DUMP=${KEEP_DUMP:-0}
 SKIP_CLEANUP=${SKIP_CLEANUP:-0}
 EXTRACT_TMP_DIR=$(mktemp -d)
 HOST=$(uname | tr '[:upper:]' '[:lower:]')
+
+#
+# add_vendor_import:
+#
+# $1: namespace path to import
+#
+# Adds a namespace to the list of vendor imports.
+# Call before write_headers.
+#
+function add_vendor_import() {
+    VENDOR_IMPORTS+=("$1")
+}
 
 #
 # cleanup
@@ -658,10 +671,20 @@ function write_blueprint_packages() {
                 printf '\tcertificate: "platform",\n'
             fi
         elif [ "$CLASS" = "JAVA_LIBRARIES" ]; then
+            local USE_PREFER=false
+            for ARG in "${ARGS[@]}"; do
+                if [[ "$ARG" == "PREFER" ]]; then
+                    USE_PREFER=true
+                fi
+            done
+
             printf 'dex_import {\n'
             printf '\tname: "%s",\n' "$PKGNAME"
             printf '\towner: "%s",\n' "$VENDOR"
             printf '\tjars: ["%s/%s"],\n' "$SRC" "$FILE"
+            if [ "$USE_PREFER" = "true" ]; then
+                printf '\tprefer: true,\n'
+            fi
         elif [ "$CLASS" = "ETC" ]; then
             if [ "$EXTENSION" = "xml" ]; then
                 printf 'prebuilt_etc_xml {\n'
@@ -1816,14 +1839,11 @@ function blob_fixup_dry() {
     return 0
 }
 
-# To be overridden by device-level extract-files.sh
-# Parameters:
-#   $1: Path to vendor Android.bp
-#
 function vendor_imports() {
-    :
+    for IMPORT in "${VENDOR_IMPORTS[@]}"; do
+        printf '\t\t"%s",\n' "$IMPORT" >> "$1"
+    done
 }
-
 #
 # prepare_images:
 #

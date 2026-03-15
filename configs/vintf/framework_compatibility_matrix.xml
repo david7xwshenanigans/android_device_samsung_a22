@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <compatibility-matrix version="5.0" type="framework">
 <hal format="hidl" optional="true">
     <name>android.hardware.audio.effect</name>
@@ -29,20 +30,6 @@
         <instance>widevine</instance>
     </interface>
 </hal>
-<hal format="aidl" optional="true">
-    <name>android.hardware.light</name>
-    <interface>
-        <name>ILights</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="aidl" optional="true">
-    <name>android.hardware.power</name>
-    <interface>
-        <name>IPower</name>
-        <instance>default</instance>
-    </interface>
-</hal>
 <hal format="hidl" optional="true">
     <name>android.hardware.media.c2</name>
     <version>1.0-2</version>
@@ -69,14 +56,6 @@
         <instance>slot2</instance>
     </interface>
 </hal>
-<hal format="aidl" optional="true">
-    <name>android.hardware.sensors</name>
-    <version>1</version>
-    <interface>
-        <name>ISensors</name>
-        <instance>default</instance>
-    </interface>
-</hal>
 <hal format="hidl" optional="true">
     <name>android.hardware.tetheroffload.control</name>
     <version>1.0-1</version>
@@ -85,34 +64,81 @@
         <instance>default</instance>
     </interface>
 </hal>
-<hal format="aidl" optional="true">
-    <name>android.hardware.vibrator</name>
+<hal format="aidl" optional="false">
+    <name>android.hardware.wifi</name>
+    <version>3</version>
     <interface>
-        <name>IVibrator</name>
+        <name>IWifi</name>
         <instance>default</instance>
     </interface>
 </hal>
-<hal format="hidl" optional="true">
-    <name>android.hardware.wifi.hostapd</name>
-    <version>1.0-3</version>
-    <interface>
-        <name>IHostapd</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
+<hal format="aidl" optional="false">
     <name>android.hardware.wifi.supplicant</name>
-    <version>1.0-4</version>
+    <version>4</version>
     <interface>
         <name>ISupplicant</name>
         <instance>default</instance>
     </interface>
 </hal>
-<hal format="hidl" optional="true">
-    <name>android.hardware.wifi</name>
-    <version>1.0-5</version>
+<hal format="aidl" optional="false">
+    <name>android.hardware.wifi.hostapd</name>
+    <version>3</version>
     <interface>
-        <name>IWifi</name>
+        <name>IHostapd</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.bluetooth.audio</name>
+    <version>5</version>
+    <interface>
+        <name>IBluetoothAudioProviderFactory</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.sensors</name>
+    <version>3</version>
+    <interface>
+        <name>ISensors</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.power</name>
+    <version>6</version>
+    <interface>
+        <name>IPower</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.health</name>
+    <version>4</version>
+    <interface>
+        <name>IHealth</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.vibrator</name>
+    <version>2</version>
+    <interface>
+        <name>IVibrator</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.light</name>
+    <interface>
+        <name>ILights</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.memtrack</name>
+    <interface>
+        <name>IMemtrack</name>
         <instance>default</instance>
     </interface>
 </hal>
@@ -214,42 +240,24 @@
     <version>3.0</version>
     <interface>
         <name>IMtkRadioEx</name>
-        <instance>imsSlot1</instance>
-        <instance>imsSlot2</instance>
-        <instance>imsSlot3</instance>
-        <instance>imsSlot4</instance>
-        <instance>mtkAssist1</instance>
-        <instance>mtkAssist2</instance>
-        <instance>mtkAssist3</instance>
-        <instance>mtkAssist4</instance>
-        <instance>mtkCap1</instance>
-        <instance>mtkCap2</instance>
-        <instance>mtkCap3</instance>
-        <instance>mtkCap4</instance>
-        <instance>mtkEm1</instance>
-        <instance>mtkEm2</instance>
-        <instance>mtkEm3</instance>
-        <instance>mtkEm4</instance>
-        <instance>mtkRcs1</instance>
-        <instance>mtkRcs2</instance>
-        <instance>mtkRcs3</instance>
-        <instance>mtkRcs4</instance>
-        <instance>mtkRsu1</instance>
-        <instance>mtkRsu2</instance>
-        <instance>mtkRsu3</instance>
-        <instance>mtkRsu4</instance>
-        <instance>mtkSe1</instance>
-        <instance>mtkSe2</instance>
-        <instance>mtkSe3</instance>
-        <instance>mtkSe4</instance>
-        <instance>mtkSlot1</instance>
-        <instance>mtkSlot2</instance>
-        <instance>mtkSlot3</instance>
-        <instance>mtkSlot4</instance>
-        <instance>mtkSmartRatSwitch1</instance>
-        <instance>mtkSmartRatSwitch2</instance>
-        <instance>mtkSmartRatSwitch3</instance>
-        <instance>mtkSmartRatSwitch4</instance>
+        <instance>imsSlot1</instance><instance>imsSlot2</instance>
+        <instance>imsSlot3</instance><instance>imsSlot4</instance>
+        <instance>mtkAssist1</instance><instance>mtkAssist2</instance>
+        <instance>mtkAssist3</instance><instance>mtkAssist4</instance>
+        <instance>mtkCap1</instance><instance>mtkCap2</instance>
+        <instance>mtkCap3</instance><instance>mtkCap4</instance>
+        <instance>mtkEm1</instance><instance>mtkEm2</instance>
+        <instance>mtkEm3</instance><instance>mtkEm4</instance>
+        <instance>mtkRcs1</instance><instance>mtkRcs2</instance>
+        <instance>mtkRcs3</instance><instance>mtkRcs4</instance>
+        <instance>mtkRsu1</instance><instance>mtkRsu2</instance>
+        <instance>mtkRsu3</instance><instance>mtkRsu4</instance>
+        <instance>mtkSe1</instance><instance>mtkSe2</instance>
+        <instance>mtkSe3</instance><instance>mtkSe4</instance>
+        <instance>mtkSlot1</instance><instance>mtkSlot2</instance>
+        <instance>mtkSlot3</instance><instance>mtkSlot4</instance>
+        <instance>mtkSmartRatSwitch1</instance><instance>mtkSmartRatSwitch2</instance>
+        <instance>mtkSmartRatSwitch3</instance><instance>mtkSmartRatSwitch4</instance>
     </interface>
 </hal>
 <hal format="hidl" optional="true">
@@ -413,6 +421,26 @@
     <version>2.0-3</version>
     <interface>
         <name>ISehWifi</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.mediatek.hardware.mtkpower</name>
+    <version>1.0-2</version>
+    <interface>
+        <name>IMtkPower</name>
+        <instance>default</instance>
+    </interface>
+    <interface>
+        <name>IMtkPerf</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.power</name>
+    <version>6</version>
+    <interface>
+        <name>IPower</name>
         <instance>default</instance>
     </interface>
 </hal>
