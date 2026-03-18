@@ -20,3 +20,4 @@ setsockopt: 1
 setrlimit: 1
 eventfd2: 1
 unlinkat: 1
+openat: 1

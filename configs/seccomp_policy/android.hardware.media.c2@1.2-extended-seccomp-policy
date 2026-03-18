@@ -11,7 +11,6 @@ bind: 1
 listen: 1
 
 # Add more for 32bits process, from android.hardware.media.c2@1.1-default-arm.policy
-mmap2: arg2 in ~PROT_EXEC || arg2 in ~PROT_WRITE
 ftruncate64: 1
 getuid32: 1
 open: 1
@@ -24,7 +23,7 @@ ugetrlimit: 1
 # crash dump policy additions
 sigreturn: 1
 futex: 1
-#mmap2: arg2 in 0x1|0x2
+mmap2: 1
 geteuid32: 1
 getgid32: 1
 getegid32: 1

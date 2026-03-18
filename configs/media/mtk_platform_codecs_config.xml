@@ -4,7 +4,7 @@
 <MediaCodecs>
     <Decoders>
         <Video name="color.converter"
-               alwaysColorConvertChecker="true"
+               alwaysColorConvertChecker="false"
                fetchCcFromBufferManager="false" />
         <Video name="c2.mtk.mpeg4.decoder"
                type="video/mp4v-es"

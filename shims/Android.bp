@@ -1,9 +1,43 @@
 cc_library_shared {
     name: "libgraphicbuffersource_shim",
     stl: "libc++",
-    srcs: ["GraphicBufferSource.cpp"],
+    srcs: ["libgraphicbuffersource/GraphicBufferSource.cpp"],
     shared_libs: [
-        "libutils",
+        "libutils-v33",
     ],
+    header_libs: [
+        "libutils_headers",
+    ],
+    vendor: true,
+}
+
+cc_library_shared {
+    name: "libui_c2_mtk_shim",
+    shared_libs: [
+        "libsync",
+        "libui-v33",
+        "libutils-v33",
+        "android.hardware.graphics.common-V3-ndk",
+        "android.hardware.graphics.allocator-V1-ndk",
+        "android.hardware.graphics.common@1.2",
+        "android.hardware.graphics.allocator@4.0",
+        "android.hardware.graphics.mapper@4.0",
+    ],
+    header_libs: [
+        "libui_headers",
+        "libutils_headers",
+        "libnativebase_headers",
+        "libnativewindow_headers",
+        "libhardware_headers",
+        "libarect_headers",
+        "libmath_headers",
+        "libgui_headers",
+    ],
+    srcs: [
+        "libui_c2_mtk/Fence.cpp",
+        "libui_c2_mtk/GraphicBuffer.cpp",
+        "libui_c2_mtk/GraphicBufferMapper.cpp",
+    ],
+    // This ensures it can be found by the vendor blobs
     vendor: true,
 }

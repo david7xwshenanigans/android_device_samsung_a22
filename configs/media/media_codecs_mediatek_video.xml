@@ -139,9 +139,11 @@ Only the three quirks included above are recognized at this point:
         </MediaCodec>
         <MediaCodec name="OMX.MTK.VIDEO.DECODER.VP9" type="video/x-vnd.on2.vp9" >
             <Limit name="size" min="16x16" max="2560x1440" />
+            <Limit name="alignment" value="2x2" />
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-output-ports" />
             <Feature name="adaptive-playback"/>
+            <Limit name="color-format" value="yuv420-planar,yuv420-flexible,yuv420-semi-planar" />
             <Limit name="concurrent-instances" max="16" />
             <Limit name="performance-point-1920x1088" value="30" />
         </MediaCodec>

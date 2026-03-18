@@ -1,4 +1,4 @@
-// Compatibility Shims for v31 (Properly named to avoid conflicts)
+// VNDK compat for vendor blobs (v31)
 
 cc_prebuilt_library_shared {
     name: "libbinder-v31",
@@ -56,7 +56,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     check_elf_files: false,
 }
-
 cc_prebuilt_library_shared {
     name: "libstagefright_bufferqueue_helper-v31",
     vendor: true,
@@ -64,8 +63,11 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: ["v31/lib64/libstagefright_bufferqueue_helper.so"],
         },
+        android_arm: {
+            srcs: ["v31/lib/libstagefright_bufferqueue_helper.so"],
+        },
     },
-    compile_multilib: "64",
+    compile_multilib: "both",
     check_elf_files: false,
 }
 
@@ -79,5 +81,32 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
+}
+
+// VNDK compat for vendor blobs (v33)
+cc_prebuilt_library_shared {
+    name: "libui-v33",
+    vendor: true,
+    target: {
+        android_arm64: {
+            srcs: ["v33/lib64/libui.so"],
+        },
+        android_arm: {
+            srcs: ["v33/lib/libui.so"],
+        },
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libstagefright_foundation-v33-a22",
+    vendor: true,
+    target: {
+        android_arm64: { srcs: ["v33/lib64/libstagefright_foundation.so"] },
+        android_arm: { srcs: ["v33/lib/libstagefright_foundation.so"] },
+    },
+    compile_multilib: "both",
     check_elf_files: false,
 }

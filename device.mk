@@ -132,14 +132,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.allocator@2.0-impl \
-    android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.allocator@3.0.vendor \
     android.hardware.graphics.allocator@2.0.vendor \
     android.hardware.graphics.allocator@4.0.vendor \
     android.hardware.graphics.common@1.2.vendor \
     android.hardware.graphics.composer@2.1-service \
-    android.hardware.graphics.mapper@2.0-impl \
     android.hardware.graphics.mapper@2.1.vendor \
     android.hardware.graphics.mapper@3.0.vendor \
     android.hardware.graphics.mapper@4.0.vendor \
@@ -149,7 +146,6 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.mediatek-mali
 
 PRODUCT_PACKAGES += \
-    gralloc.default \
     libgrallocusage.vendor
 
 # DRM
@@ -223,7 +219,9 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl@1.2.vendor \
     libcodec2_simple_component \
     libsfplugin_ccodec_utils.vendor \
-    libstagefright_softomx_plugin.vendor
+    libstagefright_softomx_plugin.vendor \
+    libsync.vendor \
+    libnativewindow.vendor
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -232,11 +230,17 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
 
+PRODUCT_SYMLINKS += \
+    $(TARGET_OUT_VENDOR)/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_OUT_VENDOR)/lib64/hw/android.hardware.graphics.mapper@4.0-impl.so \
+    $(TARGET_OUT_VENDOR)/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_OUT_VENDOR)/lib/hw/android.hardware.graphics.mapper@4.0-impl.so
+
 # NDK
 PRODUCT_PACKAGES += \
     android.hardware.light-V1-ndk.vendor \
     android.hardware.power-V2-ndk.vendor \
     android.hardware.power-V6-ndk.vendor \
+    android.hardware.graphics.allocator-V1-ndk.vendor \
+    android.hardware.graphics.common-V3-ndk.vendor \
     android.hardware.vibrator-V2-ndk.vendor \
     android.hardware.common-V2-ndk.vendor
 
@@ -437,6 +441,7 @@ PRODUCT_PACKAGES += \
 # Shims
 PRODUCT_PACKAGES += \
     libui_shim.vendor \
+    libui_c2_mtk_shim \
     libbase_shim \
     libprocessgroup_shim \
     libgraphicbuffersource_shim
@@ -474,9 +479,11 @@ PRODUCT_PACKAGES += \
     libhidlbase-v31 \
     libutils-v31 \
     libutils-v32 \
+    libutils-v33 \
+    libui-v33 \
     liblog-v31 \
     libstagefright_bufferqueue_helper-v31 \
-    libstagefright_foundation-v33 \
+    libstagefright_foundation-v33-a22 \
     android.system.keystore2-V1-ndk_platform \
     libnl
 

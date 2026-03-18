@@ -17,6 +17,14 @@
     </interface>
 </hal>
 <hal format="hidl" optional="true">
+    <name>android.hardware.graphics.allocator</name>
+    <version>4.0</version>
+    <interface>
+        <name>IAllocator</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
     <name>android.hardware.drm</name>
     <version>1.0-4</version>
     <interface>
