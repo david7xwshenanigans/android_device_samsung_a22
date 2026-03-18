@@ -1,43 +1,29 @@
-cc_library_shared {
+cc_prebuilt_library_shared {
     name: "libgraphicbuffersource_shim",
-    stl: "libc++",
-    srcs: ["libgraphicbuffersource/GraphicBufferSource.cpp"],
-    shared_libs: [
-        "libutils-v33",
-    ],
-    header_libs: [
-        "libutils_headers",
-    ],
+    arch: {
+        arm: {
+            srcs: ["libgraphicbuffersource/lib/libgraphicbuffersource_shim.so"],
+        },
+        arm64: {
+            srcs: ["libgraphicbuffersource/lib64/libgraphicbuffersource_shim.so"],
+        },
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
     vendor: true,
 }
 
-cc_library_shared {
+cc_prebuilt_library_shared {
     name: "libui_c2_mtk_shim",
-    shared_libs: [
-        "libsync",
-        "libui-v33",
-        "libutils-v33",
-        "android.hardware.graphics.common-V3-ndk",
-        "android.hardware.graphics.allocator-V1-ndk",
-        "android.hardware.graphics.common@1.2",
-        "android.hardware.graphics.allocator@4.0",
-        "android.hardware.graphics.mapper@4.0",
-    ],
-    header_libs: [
-        "libui_headers",
-        "libutils_headers",
-        "libnativebase_headers",
-        "libnativewindow_headers",
-        "libhardware_headers",
-        "libarect_headers",
-        "libmath_headers",
-        "libgui_headers",
-    ],
-    srcs: [
-        "libui_c2_mtk/Fence.cpp",
-        "libui_c2_mtk/GraphicBuffer.cpp",
-        "libui_c2_mtk/GraphicBufferMapper.cpp",
-    ],
-    // This ensures it can be found by the vendor blobs
+    arch: {
+        arm: {
+            srcs: ["libui_c2_mtk/lib/libui_c2_mtk_shim.so"],
+        },
+        arm64: {
+            srcs: ["libui_c2_mtk/lib64/libui_c2_mtk_shim.so"],
+        },
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
     vendor: true,
 }
