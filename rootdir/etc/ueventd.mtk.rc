@@ -183,3 +183,6 @@
 # AT+MTKEDLBK
 /dev/block/by-name/btd    0660    root    system
 
+# fpsgo
+/sys/kernel/fpsgo/common/gpu_block_boost   0664   system   system
+/sys/kernel/fpsgo/fbt/boost_ta             0664   system   system

@@ -1,2 +1,5 @@
 on boot
     stop console
+
+on property:sys.boot_completed=1
+    setprop vendor.powerhal.init 1
