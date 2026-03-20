@@ -114,7 +114,7 @@ PRODUCT_PACKAGES += \
 
 # CAS
 PRODUCT_PACKAGES += \
-    android.hardware.cas@1.2-service-lazy
+    android.hardware.cas@1.2-service
 
 # Cgroup
 PRODUCT_COPY_FILES += \
