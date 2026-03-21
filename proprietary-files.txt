@@ -1347,8 +1347,8 @@ vendor/lib64/libmtksysutils.so
 vendor/lib64/libmtkutils.so
 vendor/lib64/libratconfig.so
 vendor/lib64/libril_sem.so
-vendor/lib64/libsec-ril.so
-vendor/lib64/libsecril-client.so
+vendor/lib64/libsec-ril.so|a1bf397613d0c8d34db8995eb0b0be2b60f768d7
+vendor/lib64/libsecril-client.so|8b25b1bd39817c512a3cef5ce0c629415ddec2d7
 vendor/lib64/libsemnativecarrierfeature.so
 vendor/lib64/libsimlock.so
 vendor/lib64/libsimmelock.so
