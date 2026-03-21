@@ -495,6 +495,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     hostapd \
+    dnsmasq \
     wpa_supplicant \
     libwifi-hal-mediatek \
     lib_driver_cmd_mt66xx \
