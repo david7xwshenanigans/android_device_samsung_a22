@@ -9,6 +9,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from a22 device
 $(call inherit-product, device/samsung/a22/device.mk)
 
+TARGET_SCREEN_WIDTH := 720
+TARGET_SCREEN_HEIGHT := 1600
+
 PRODUCT_DEVICE := a22
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-A225F
