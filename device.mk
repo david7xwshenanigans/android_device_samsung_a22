@@ -123,6 +123,7 @@ PRODUCT_COPY_FILES += \
 
 # Charger
 PRODUCT_PACKAGES += \
+    charger \
     charger_res_images_vendor \
     libsuspend
 
