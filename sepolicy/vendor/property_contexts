@@ -2,8 +2,8 @@
 ro.vendor.aware_available               u:object_r:vendor_aware_available_prop:s0
 
 # Bluetooth
-vendor.bluetooth_nv_ver                 u:object_r:wifi_log_prop:s0
-vendor.bluetooth_fw_ver                 u:object_r:wifi_log_prop:s0
+vendor.bluetooth_nv_ver                 u:object_r:vendor_bluetooth_prop:s0
+vendor.bluetooth_fw_ver                 u:object_r:vendor_bluetooth_prop:s0
 
 # Camera
 ro.mtk_cam_stereo_camera_support        u:object_r:vendor_mtk_camera_prop:s0
@@ -48,4 +48,4 @@ vendor.tzts_daemon                      u:object_r:vendor_tztsdaemon_prop:s0
 vendor.secureos.                        u:object_r:vendor_secureos_prop:s0
 
 # Wi-Fi
-vendor.wifi.dualconcurrent.interface    u:object_r:wifi_log_prop:s0
+vendor.wifi.dualconcurrent.interface    u:object_r:vendor_wifi_prop:s0
