@@ -1,0 +1,82 @@
+# Battery
+genfscon sysfs /devices/platform/samsung_mobile_device/samsung_mobile_device:battery/power_supply       u:object_r:sysfs_battery:s0
+genfscon sysfs /devices/platform/1100f000.i2c3/i2c-3/3-0049/sm5714-fuelgauge/power_supply/sm5714-fuelgauge/type     u:object_r:sysfs_battery:s0
+genfscon sysfs /devices/platform/1100f000.i2c3/i2c-3/3-0049/sm5714-charger/power_supply/sm5714-charger/type         u:object_r:sysfs_battery:s0
+genfscon sysfs /devices/platform/1100f000.i2c3/i2c-3/3-0049/sm5714-charger/power_supply/otg/type                    u:object_r:sysfs_battery:s0
+
+# Display
+genfscon sysfs /devices/platform/panel/panel_drv/backlight/panel/brightness             u:object_r:sysfs_ski_display_writable:s0
+genfscon sysfs /devices/platform/panel/panel_drv/backlight/panel/max_brightness         u:object_r:sysfs_ski_display_writable:s0
+genfscon sysfs /devices/platform/panel/panel_drv/lcd/panel/lcd_type                     u:object_r:sysfs_ski_display_writable:s0
+
+# IIO
+genfscon sysfs /bus/iio/devices                                                         u:object_r:sysfs_iio_devices:s0
+genfscon sysfs /devices/platform/shub/iio:device                                        u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt635x-auxadc/iio:device1                u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/11001000.auxadc/iio:device                             u:object_r:sysfs_ss_writable:s0
+
+# Input
+genfscon sysfs /devices/platform/1100d000.i2c6/i2c-6/6-0049/input/input7/enabled        u:object_r:sysfs_ski_touch_writable:s0
+genfscon sysfs /devices/virtual/sec/hall_ic/hall_detect                                 u:object_r:sysfs_sec:s0
+genfscon sysfs /devices/virtual/sec/tsp/cmd                                             u:object_r:sysfs_sec:s0
+genfscon sysfs /devices/virtual/sec/tsp/ear_detect_enable                               u:object_r:sysfs_sec:s0
+genfscon sysfs /devices/virtual/input/input3/name                                       u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/virtual/input/input5/name                                       u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/virtual/input/input10/name                                      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/virtual/input/input11/name                                      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/virtual/input/input12/name                                      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/virtual/input/input                                             u:object_r:sysfs_sensor:s0
+
+# Memory
+genfscon sysfs /kernel/mm/vmscan/am_app_launch                                          u:object_r:sysfs_ski_memory_writable:s0
+genfscon sysfs /kernel/mm/vmscan/mem_boost_mode                                         u:object_r:sysfs_ski_memory_writable:s0
+
+# Power
+genfscon sysfs /power/cpufreq_min_limit                                                 u:object_r:sysfs_power:s0
+genfscon sysfs /power/cpufreq_max_limit                                                 u:object_r:sysfs_power:s0
+genfscon sysfs /power/cpufreq_table                                                     u:object_r:sysfs_power:s0
+genfscon proc  /sys/vm/kswapd_perftune_cpumask                                          u:object_r:proc_kswapd_perftune_cpumask:s0
+genfscon sysfs /kernel/gpu                                                              u:object_r:sysfs_gpu:s0
+genfscon sysfs /kernel/gpu/gpu_(min|max)_clock                                          u:object_r:sysfs_mtk_gpufreq:s0
+genfscon sysfs /devices/system/cpu/cpufreq/mtk/.cluster_(min|max)_freq                  u:object_r:sysfs_mtk_cpufreq:s0
+genfscon sysfs /devices/platform/13040000.mali/js_ctx_scheduling_mode                   u:object_r:sysfs_gpu:s0
+genfscon sysfs /devices/platform/13040000.mali/js_scheduling_period                     u:object_r:sysfs_gpu:s0
+genfscon sysfs /devices/platform/13040000.mali/dvfs_period                              u:object_r:sysfs_gpu:s0
+
+# Sensors
+genfscon sysfs /devices/virtual/sensors/flip_cover_detector_sensor/nfc_cover_status     u:object_r:sysfs_ski_sensor_writable:s0
+genfscon sysfs /devices/virtual/sensors/ssp_sensor/enable                               u:object_r:sysfs_ski_sensor_writable:s0
+genfscon sysfs /devices/virtual/sensors/ssp_sensor/sensor_spec                          u:object_r:sysfs_ski_sensor_writable:s0
+genfscon sysfs /devices/virtual/sensors/ssp_sensor/shub_file                            u:object_r:sysfs_ski_sensor_writable:s0
+genfscon sysfs /devices/virtual/sensors/grip_sensor                                     u:object_r:sysfs_sensor_writable:s0
+
+# Thermal
+genfscon sysfs /devices/virtual/sec/sec-ap-thermistor/temperature                       u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/virtual/sec/sec-pa-thermistor/temperature                       u:object_r:sysfs_ss_writable:s0
+
+# VM
+genfscon proc  /sys/vm/dirty_background_bytes                                           u:object_r:proc_dirty:s0
+genfscon proc  /sys/vm/dirty_bytes                                                      u:object_r:proc_dirty:s0
+
+# Wakeup nodes
+genfscon sysfs /devices/platform/1100d000.i2c6/i2c-6/6-0049/wakeup                                      u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt6358-rtc/rtc/rtc0/wakeup  u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/samsung_mobile_device/samsung_mobile_device:battery/power_supply/wireless/wakeup   u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/samsung_mobile_device/samsung_mobile_device:hall_ic/wakeup                         u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/samsung_mobile_device/samsung_mobile_device:battery/power_supply/ac/wakeup         u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/samsung_mobile_device/samsung_mobile_device:battery/power_supply/battery/wakeup    u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/shub/wakeup                                                                        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/10238000.gce/wakeup                                                                u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1100f000.i2c3/i2c-3/3-0049/sm5714-charger/power_supply/otg/wakeup                  u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/samsung_mobile_device/samsung_mobile_device:battery/power_supply/usb/wakeup        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1100f000.i2c3/i2c-3/3-0033/wakeup                                                  u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1100f000.i2c3/i2c-3/3-0049/sm5714-fuelgauge/power_supply/sm5714-fuelgauge/wakeup   u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt635x-auxadc/wakeup                     u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1100f000.i2c3/i2c-3/3-0049/sm5714-charger/power_supply/sm5714-charger/wakeup       u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/mt_usb/musb-hdrc/usb1/1-1/wakeup                                                   u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt6358-rtc/wakeup                        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1100f000.i2c3/i2c-3/3-0049/wakeup                                                  u:object_r:sysfs_wakeup:s0
+
+# Wi-Fi
+genfscon sysfs /wifi/memdump                                                            u:object_r:sysfs_wifi_memdump:s0
+genfscon sysfs /wifi                                                                    u:object_r:sysfs_wifi:s0

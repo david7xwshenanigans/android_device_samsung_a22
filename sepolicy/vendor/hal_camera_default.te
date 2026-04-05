@@ -1,0 +1,57 @@
+vndbinder_use(hal_camera_default);
+
+binder_call(hal_camera_default, system_server);
+binder_call(system_server, hal_camera_default);
+
+allow hal_camera_default camera_isp_device:chr_file rw_file_perms;
+allow hal_camera_default kd_camera_hw_device:chr_file rw_file_perms;
+allow hal_camera_default CAM_CAL_DRV_device:chr_file rw_file_perms;
+allow hal_camera_default nvcfg_file:dir create_dir_perms;
+allow hal_camera_default nvcfg_file:file create_file_perms;
+allow hal_camera_default nvcfg_file:lnk_file r_file_perms;
+allow hal_camera_default self:capability sys_nice;
+allow hal_camera_default sysfs_boot_mode:file r_file_perms;
+allow hal_camera_default flashlight_device:chr_file rw_file_perms;
+allow hal_camera_default proc_thermal:dir search;
+allow hal_camera_default vendor_camera_dump_file:dir create_dir_perms;
+allow hal_camera_default vendor_camera_dump_file:file create_file_perms;
+allow hal_camera_default mnt_user_file:dir rw_dir_perms;
+allow hal_camera_default mnt_user_file:lnk_file rw_file_perms;
+allow hal_camera_default proc_meminfo:file r_file_perms;
+allow hal_camera_default proc_ged:file rw_file_perms;
+allowxperm hal_camera_default proc_ged:file ioctl { 0x6700-0x6710 0x6764-0x676a 0x67c8 };
+allow hal_camera_default MTK_SMI_device:chr_file r_file_perms;
+allow hal_camera_default camera_fdvt_device:chr_file rw_file_perms;
+allow hal_camera_default MAINAF_device:chr_file rw_file_perms;
+allow hal_camera_default ccu_device:chr_file rw_file_perms;
+allow hal_camera_default mtk_cmdq_device:chr_file r_file_perms;
+allow hal_camera_default sysfs_ski_memory_writable:dir r_dir_perms;
+allow hal_camera_default sysfs_ski_memory_writable:file rw_file_perms;
+allow hal_camera_default sysfs_emi_ctrl_concurrency_scenario:file rw_file_perms;
+allow hal_camera_default mnt_vendor_file:dir create_dir_perms;
+allow hal_camera_default mnt_vendor_file:file create_file_perms;
+allow hal_camera_default mnt_vendor_file:fifo_file create_file_perms;
+
+allow hal_camera_default hal_graphics_composer_default:fd use;
+allow hal_camera_default hal_graphics_allocator:fd use;
+allow hal_camera_default hal_graphics_allocator:binder { call transfer };
+allow hal_camera_default cameraserver:fd use;
+allow hal_camera_default cameraserver:binder { call transfer };
+allow hal_camera_default system_server:binder call;
+binder_call(hal_camera_default, hal_graphics_allocator_default)
+binder_call(hal_camera_default, mtk_hal_power)
+
+hal_client_domain(hal_camera_default, hal_graphics_allocator)
+
+allow hal_camera_default hal_graphics_mapper_hwservice:hwservice_manager find;
+allow hal_camera_default hal_camera_hwservice:hwservice_manager { add find };
+allow hal_camera_default hal_graphics_mapper_hwservice:hwservice_manager find;
+
+dontaudit hal_camera_default hal_graphics_allocator_hwservice:hwservice_manager find;
+dontaudit hal_camera_default hal_power_hwservice:hwservice_manager find;
+dontaudit hal_camera_default hal_configstore_ISurfaceFlingerConfigs:hwservice_manager find;
+dontaudit hal_camera_default mtk_hal_bgs_hwservice:hwservice_manager { add find };
+
+set_prop(hal_camera_default, sec_camera_prop)
+get_prop(hal_camera_default, vendor_sec_camera_prop)
+set_prop(hal_camera_default, vendor_camera_prop)

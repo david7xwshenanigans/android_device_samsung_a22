@@ -1,0 +1,6 @@
+allow hal_usb_default sysfs_usb_nonplat:dir r_dir_perms;
+allow hal_usb_default sysfs_usb_nonplat:file r_file_perms;
+allow hal_usb_default sysfs_usb_nonplat:lnk_file r_file_perms;
+allow hal_usb_default sysfs_battery:dir search;
+
+get_prop(hal_usb_default, vendor_mtk_usb_prop)

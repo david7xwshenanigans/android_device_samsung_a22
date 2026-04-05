@@ -1,0 +1,16 @@
+type tzdaemon, domain;
+type tzdaemon_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(tzdaemon)
+
+allow tzdaemon tee_efs_file:dir create_dir_perms;
+allow tzdaemon tee_efs_file:file create_file_perms;
+allow tzdaemon tz_user_device:chr_file rw_file_perms;
+allow tzdaemon property_socket:sock_file write;
+allow tzdaemon init:unix_stream_socket connectto;
+allow tzdaemon efs_file:dir search;
+allow tzdaemon mnt_vendor_file:dir search;
+
+get_prop(tzdaemon, product_ship_prop)
+set_prop(tzdaemon, vendor_tzdaemon_prop)
+set_prop(tzdaemon, vendor_secureos_prop)

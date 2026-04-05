@@ -1,0 +1,2 @@
+get_prop(surfaceflinger, vendor_hwc_prop)
+get_prop(surfaceflinger, vendor_display_sf_prop);

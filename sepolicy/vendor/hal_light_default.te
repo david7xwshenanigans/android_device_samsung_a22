@@ -1,0 +1,2 @@
+allow hal_light_default sysfs_ski_display_writable:dir r_dir_perms;
+allow hal_light_default sysfs_ski_display_writable:file rw_file_perms;
