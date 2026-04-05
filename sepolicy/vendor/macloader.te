@@ -21,4 +21,4 @@ allow macloader self:capability { chown fowner fsetid net_admin net_raw sys_modu
 allow macloader mnt_vendor_file:dir r_dir_perms;
 
 set_prop(macloader, vendor_mtk_wifi_hotspot_prop)
-set_prop(macloader, wifi_log_prop)
+set_prop(macloader, vendor_wifi_prop)

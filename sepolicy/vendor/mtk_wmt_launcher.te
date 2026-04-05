@@ -1,1 +1,2 @@
-set_prop(mtk_wmt_launcher, wifi_log_prop)
+set_prop(mtk_wmt_launcher, vendor_bluetooth_prop)
+
