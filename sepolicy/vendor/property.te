@@ -10,6 +10,8 @@ type vendor_display_sf_prop, property_type, vendor_property_type, vendor_public_
 type vendor_members_prop, property_type, vendor_property_type, vendor_public_property_type;
 type vendor_model_suffix_prop, property_type, vendor_property_type, vendor_public_property_type;
 type exported_radio_prop, property_type, system_property_type, system_public_property_type;
+type vendor_bluetooth_prop, property_type;
+type vendor_wifi_prop, property_type;
 
 vendor_public_prop(vendor_hwc_prop)
 vendor_restricted_prop(vendor_aware_available_prop);
