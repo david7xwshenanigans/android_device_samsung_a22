@@ -1,0 +1,3 @@
+allow odrefresh init:unix_stream_socket connectto;
+allow odrefresh property_socket:sock_file write;
+dontaudit odrefresh property_type:file { getattr open read map };
