@@ -1,0 +1,86 @@
+# Audio
+ro.vendor.qti.va_aosp.support           u:object_r:vendor_exported_system_prop:s0 exact bool
+
+# Camera
+persist.sns.camera_light                u:object_r:sns_camera_light_prop:s0
+cam.dipsavefile.enable                  u:object_r:sec_camera_prop:s0
+sec.camera.portrait_mode                u:object_r:sec_camera_portrait_prop:s0
+astar.cam                               u:object_r:sec_camera_prop:s0
+persist.debug.sf.showfps                u:object_r:sec_camera_prop:s0
+persist.cam.pp.feat.mask                u:object_r:sec_camera_prop:s0
+persist.enable.max.pending.buf          u:object_r:sec_camera_prop:s0
+cameradaemon.SaveMemAtBoot              u:object_r:sec_camera_prop:s0
+persist.capture.burst.exposures         u:object_r:sec_camera_prop:s0
+persist.denoise.process.plates          u:object_r:sec_camera_prop:s0
+persist.partial.skip                    u:object_r:sec_camera_prop:s0
+persist.tnr.process.plates              u:object_r:sec_camera_prop:s0
+disable.cpp.power.collapse              u:object_r:sec_camera_prop:s0
+cpp.set.clock                           u:object_r:sec_camera_prop:s0
+ro.camera.res.fmq.size                  u:object_r:sec_camera_prop:s0
+ro.camera.req.fmq.size                  u:object_r:sec_camera_prop:s0
+sys.cameramode.                         u:object_r:sec_camera_prop:s0
+system.camera.CC.                       u:object_r:sec_camera_prop:s0
+service.camera.                         u:object_r:sec_camera_prop:s0
+persist.vendor.camera.feature.cac       u:object_r:sec_camera_prop:s0
+
+# Cache
+persist.cache_integrity_32              u:object_r:cache_status_prop:s0
+persist.cache_integrity_64              u:object_r:cache_status_prop:s0
+persist.cache_status_32                 u:object_r:cache_status_prop:s0
+persist.cache_status_64                 u:object_r:cache_status_prop:s0
+
+# CSC
+mdc.                                    u:object_r:csc_prop:s0
+ro.csc.countryiso_code                  u:object_r:csc_prop:s0
+ro.csc.sales_code                       u:object_r:csc_prop:s0
+ro.csc.omcnw_code                       u:object_r:csc_prop:s0
+ro.csc.omcnw_code2                      u:object_r:csc_prop:s0
+ril.official_cscver                     u:object_r:csc_prop:s0
+persist.sys.omc_etcpath                 u:object_r:csc_prop:s0
+persist.sys.omc_support                 u:object_r:csc_prop:s0
+ro.simbased.changetype                  u:object_r:csc_prop:s0
+ro.csc.country_code                     u:object_r:csc_prop:s0
+
+# Display
+hdr.                                    u:object_r:sec_hdr_prop:s0
+
+# Factory
+ro.factory.factory_binary               u:object_r:exported_system_prop:s0
+
+# Hardware
+ro.hardware.chipname                    u:object_r:exported_default_prop:s0
+
+# Misc
+persist.sys.sec_feature                 u:object_r:exported_system_prop:s0
+persist.sys.sec_feature2                u:object_r:exported_system_prop:s0
+persist.sys.sec_pcid                    u:object_r:exported_system_prop:s0
+persist.sys.sec_pcid2                   u:object_r:exported_system_prop:s0
+persist.sys.sf.hs_mode                  u:object_r:exported_system_prop:s0
+
+# Product
+ro.product_ship                         u:object_r:product_ship_prop:s0
+
+# Radio
+persist.ril.                            u:object_r:radio_prop:s0
+ril.NwNmId                              u:object_r:exported_radio_prop:s0
+ril.NwNmId2                             u:object_r:exported_radio_prop:s0
+persist.ims.gcfmode                     u:object_r:exported_radio_prop:s0
+persist.radio.gcfmode                   u:object_r:exported_radio_prop:s0
+persist.ims.mock.                       u:object_r:exported_radio_prop:s0
+persist.ims.pctmode                     u:object_r:exported_radio_prop:s0
+persist.ims.salescode.sve               u:object_r:exported_radio_prop:s0
+
+# Security
+ro.security.                            u:object_r:exported_system_prop:s0
+
+# Snap
+persist.debug_snap_gpu                  u:object_r:vendor_debug_snap_prop:s0
+
+# Thermal
+dev.sdhms.thermal.hv                    u:object_r:exported_system_prop:s0
+
+# Timed
+persist.timed.enable                    u:object_r:sec_timed_prop:s0
+
+# ZRAM
+persist.sys.zram.ram_expand_size        u:object_r:zram_config_prop:s0 exact int
