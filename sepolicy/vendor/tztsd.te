@@ -1,0 +1,11 @@
+type tztsd, domain;
+type tztsd_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(tztsd)
+
+allow tztsd tz_user_device:chr_file rw_file_perms;
+allow tztsd property_socket:sock_file write;
+allow tztsd init:unix_stream_socket connectto;
+
+get_prop(tztsd, product_ship_prop)
+set_prop(tztsd, vendor_tztsdaemon_prop)

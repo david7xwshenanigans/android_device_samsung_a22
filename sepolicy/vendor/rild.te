@@ -1,0 +1,21 @@
+allow rild vendor_radio_data_file:dir create_dir_perms;
+allow rild vendor_radio_data_file:file create_file_perms;
+allow rild tun_device:chr_file rw_file_perms;
+allowxperm rild tun_device:chr_file ioctl { 0x54ca 0x54cb };
+allow rild radio_device:chr_file rw_file_perms;
+allow rild radio_device:blk_file r_file_perms;
+allow rild drb_device:chr_file rw_file_perms;
+allow rild self:tun_socket { create relabelfrom relabelto };
+allow rild hal_audio_default:dir search;
+allow rild hal_audio_default:file { read getattr open };
+
+allow rild hal_telephony_hwservice:hwservice_manager { add find };
+
+get_prop(rild, product_ship_prop)
+get_prop(rild, vendor_radio_prop)
+get_prop(rild, csc_prop)
+get_prop(rild, sec_ims_prop)
+set_prop(rild, vendor_members_prop)
+get_prop(rild, vendor_model_suffix_prop)
+get_prop(rild, sec_timed_prop)
+set_prop(rild, exported_radio_prop)

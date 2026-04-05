@@ -1,0 +1,10 @@
+vndbinder_use(hal_graphics_composer_default);
+
+hal_client_domain(hal_graphics_composer_default, hal_graphics_allocator);
+
+get_prop(hal_graphics_composer_default, sec_camera_portrait_prop)
+get_prop(hal_graphics_composer_default, vendor_camera_prop);
+set_prop(hal_graphics_composer_default, vendor_hwc_prop);
+set_prop(hal_graphics_composer_default, vendor_display_sf_prop);
+get_prop(hal_graphics_composer_default, sec_camera_prop)
+get_prop(hal_graphics_composer_default, sec_hdr_prop)

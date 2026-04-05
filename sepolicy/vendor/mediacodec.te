@@ -1,0 +1,2 @@
+get_prop(mediacodec, product_ship_prop)
+get_prop(mediacodec, sec_camera_prop)

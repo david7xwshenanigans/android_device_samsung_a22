@@ -1,0 +1,21 @@
+set_prop(vendor_init, vendor_mtk_camera_prop)
+set_prop(vendor_init, vendor_mtk_c2_log_prop)
+set_prop(vendor_init, vendor_mtk_default_prop)
+get_prop(vendor_init, vts_status_prop)
+get_prop(vendor_init, vendor_radio_prop)
+set_prop(vendor_init, vendor_exported_system_prop)
+set_prop(vendor_init, vendor_camera_prop)
+set_prop(vendor_init, vendor_members_prop)
+set_prop(vendor_init, exported_radio_prop)
+
+allow vendor_init cgroup:file getattr;
+allow vendor_init unlabeled:{
+    file
+    dir
+    lnk_file
+    sock_file
+    fifo_file
+ } { getattr relabelfrom };
+
+allow vendor_init proc_dirty:file w_file_perms;
+dontaudit vendor_init vendor_userdir_file:dir write;

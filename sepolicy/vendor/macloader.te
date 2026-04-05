@@ -1,0 +1,24 @@
+type macloader, domain;
+type macloader_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(macloader)
+
+allow macloader sysfs_wifi_memdump:file rw_file_perms;
+allow macloader wmtWifi_device:chr_file w_file_perms;
+allow macloader vendor_convergence_data_file:dir create_dir_perms;
+allow macloader vendor_convergence_data_file:file create_file_perms;
+allow macloader wifi_efs_file:dir create_dir_perms;
+allow macloader wifi_efs_file:file create_file_perms;
+allow macloader property_socket:sock_file write;
+allow macloader init:unix_stream_socket connectto;
+allow macloader sysfs_wifi:dir search;
+allow macloader sysfs_wifi:file rw_file_perms;
+allow macloader efs_file:dir search;
+allow macloader proc_net:file rw_file_perms;
+allow macloader self:udp_socket { ioctl create };
+allowxperm macloader self:udp_socket ioctl { 0x8913-0x8914 };
+allow macloader self:capability { chown fowner fsetid net_admin net_raw sys_module };
+allow macloader mnt_vendor_file:dir r_dir_perms;
+
+set_prop(macloader, vendor_mtk_wifi_hotspot_prop)
+set_prop(macloader, wifi_log_prop)

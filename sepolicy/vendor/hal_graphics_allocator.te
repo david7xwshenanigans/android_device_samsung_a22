@@ -1,0 +1,2 @@
+allow hal_graphics_allocator hal_camera_default:binder transfer;
+allow hal_graphics_allocator cameraserver:binder transfer;

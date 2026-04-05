@@ -1,0 +1,51 @@
+# Aware
+ro.vendor.aware_available               u:object_r:vendor_aware_available_prop:s0
+
+# Bluetooth
+vendor.bluetooth_nv_ver                 u:object_r:wifi_log_prop:s0
+vendor.bluetooth_fw_ver                 u:object_r:wifi_log_prop:s0
+
+# Camera
+ro.mtk_cam_stereo_camera_support        u:object_r:vendor_mtk_camera_prop:s0
+persist.vendor.camera.privapp.list      u:object_r:vendor_sec_camera_prop:s0
+vendor.npu.usr_drv.log_mask             u:object_r:vendor_sec_camera_prop:s0
+vendor.camera.unihal.enable             u:object_r:vendor_camera_prop:s0
+ro.vendor.camera.wrapper.hal3TrebleMinorVersion         u:object_r:vendor_camera_prop:s0
+
+# Display
+vendor.display.sf.                      u:object_r:vendor_display_sf_prop:s0
+
+# Fingerprint
+vendor.finger.down                      u:object_r:vendor_udfps_prop:s0
+
+# HWC
+vendor.display.vds_allow_hwc            u:object_r:vendor_hwc_prop:s0
+
+# Key
+ro.mtk_key_manager_support              u:object_r:vendor_mtk_default_prop:s0
+
+# Members
+persist.vendor.members.                 u:object_r:vendor_members_prop:s0
+
+# Radio
+ro.vendor.multisim.                     u:object_r:vendor_radio_prop:s0
+ro.multisim.                            u:object_r:vendor_radio_prop:s0
+ro.vendor.radio.                        u:object_r:vendor_radio_prop:s0
+
+# SMPS
+ro.smps.enable                          u:object_r:vendor_exported_system_prop:s0
+
+# Snap
+persist.vendor.snaplite_cache_status_64         u:object_r:vendor_snap_cache_prop:s0
+persist.vendor.snaplite_cache_integrity_64      u:object_r:vendor_snap_cache_prop:s0
+
+# Thermal
+vendor.thermal.amb.                     u:object_r:vendor_thermal_test_prop:s0
+
+# TZ
+vendor.tzdaemon                         u:object_r:vendor_tzdaemon_prop:s0
+vendor.tzts_daemon                      u:object_r:vendor_tztsdaemon_prop:s0
+vendor.secureos.                        u:object_r:vendor_secureos_prop:s0
+
+# Wi-Fi
+vendor.wifi.dualconcurrent.interface    u:object_r:wifi_log_prop:s0

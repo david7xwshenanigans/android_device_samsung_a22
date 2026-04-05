@@ -1,2 +1,15 @@
-type sns_camera_light_prop, property_type, vendor_property_type;
-type csc_prop, property_type, vendor_property_type;
+type vendor_sec_camera_prop, property_type, vendor_property_type, vendor_public_property_type;
+type vendor_thermal_test_prop, property_type, vendor_property_type, vendor_public_property_type;
+type vendor_tzdaemon_prop, property_type, vendor_property_type, vendor_public_property_type, mtk_core_property_type;
+type vendor_tztsdaemon_prop, property_type, vendor_property_type, vendor_public_property_type;
+type vendor_radio_prop, property_type, vendor_property_type, vendor_public_property_type;
+type vendor_secureos_prop, property_type, vendor_property_type, vendor_public_property_type;
+type vendor_snap_cache_prop, property_type, vendor_property_type, vendor_public_property_type;
+type vendor_camera_prop, property_type, vendor_property_type, vendor_public_property_type;
+type vendor_display_sf_prop, property_type, vendor_property_type, vendor_public_property_type;
+type vendor_members_prop, property_type, vendor_property_type, vendor_public_property_type;
+type vendor_model_suffix_prop, property_type, vendor_property_type, vendor_public_property_type;
+type exported_radio_prop, property_type, system_property_type, system_public_property_type;
+
+vendor_public_prop(vendor_hwc_prop)
+vendor_restricted_prop(vendor_aware_available_prop);

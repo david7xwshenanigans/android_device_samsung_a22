@@ -1,0 +1,19 @@
+type snap_utility, domain, halclientdomain, hal_allocator_client;
+type snap_utility_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(snap_utility)
+
+allow snap_utility snap_data_vendor_file:dir create_dir_perms;
+allow snap_utility snap_data_vendor_file:file create_file_perms;
+allow snap_utility gpu_device:dir r_dir_perms;
+allow snap_utility gpu_device:chr_file rw_file_perms;
+allow snap_utility vendor_shell_exec:file rx_file_perms;
+allow snap_utility vendor_toolbox_exec:file rx_file_perms;
+allow snap_utility vendor_snap_file:dir r_dir_perms;
+allow snap_utility vendor_snap_file:file r_file_perms;
+allow snap_utility system_data_file:dir search;
+
+set_prop(snap_utility, cache_status_prop)
+get_prop(snap_utility, system_boot_reason_prop)
+get_prop(snap_utility, vendor_debug_snap_prop)
+set_prop(snap_utility, vendor_snap_cache_prop)

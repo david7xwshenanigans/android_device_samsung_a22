@@ -1,0 +1,2 @@
+dontaudit netdagent self:udp_socket { create ioctl };
+dontaudit netdagent self:capability net_admin;
