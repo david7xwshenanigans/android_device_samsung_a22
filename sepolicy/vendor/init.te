@@ -1,5 +1,12 @@
 allow init lk_block_device:lnk_file relabelto;
 allow init efs_file:dir mounton;
 allow init sysfs_devices_block:file rw_file_perms;
-
+allow init {
+    proc_sysrq
+    proc_panic
+    proc_sched
+    proc_abi
+    proc_hostname
+    proc_overcommit_memory
+}:file getattr;
 set_prop(rild, vendor_model_suffix_prop)
