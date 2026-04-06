@@ -1,3 +1,0 @@
-type misctrl, domain;
-
-allow misctrl sysfs_dt_firmware_android:file r_file_perms;
