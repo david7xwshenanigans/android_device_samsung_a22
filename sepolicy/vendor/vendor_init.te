@@ -18,5 +18,14 @@ allow vendor_init unlabeled:{
     fifo_file
  } { getattr relabelfrom };
 
+ allow vendor_init {
+    proc_page_cluster
+    proc_swappiness
+    proc_perfmgr
+    proc_vm_dirty
+    proc_pl_lk
+    proc_cpufreq
+}:file getattr;
+
 allow vendor_init proc_dirty:file w_file_perms;
 dontaudit vendor_init vendor_userdir_file:dir write;
