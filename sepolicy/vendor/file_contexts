@@ -52,6 +52,9 @@
 # Media
 /(vendor|system/vendor)/bin/hw/samsung\.software\.media\.c2@1\.0-service                    u:object_r:mediacodec_exec:s0
 
+# Misc
+/sys/devices/platform/10238000\.gce/wakeup/wakeup[0-9]*(/.*)?                    u:object_r:sysfs_wakeup:s0
+
 # NFC
 /dev/sec-nfc                                                                                u:object_r:nfc_device:s0
 /dev/sec-nfc-fn                                                                             u:object_r:nfc_device:s0
