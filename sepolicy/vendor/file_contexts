@@ -66,6 +66,7 @@
 
 # Power
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.a32-libperfmgr             u:object_r:hal_power_default_exec:s0
+/sys/devices/platform/samsung_mobile_device/samsung_mobile_device:battery/power_supply/[^/]+/wakeup[0-9]*(/.*)?    u:object_r:sysfs_wakeup:s0
 
 # RIL
 /vendor/bin/secril_config_svc                                       u:object_r:vendor_secril_config_svc_exec:s0
@@ -74,13 +75,13 @@
 /dev/umts_ipc0                                                      u:object_r:radio_device:s0
 /dev/umts_ipc1                                                      u:object_r:radio_device:s0
 
-
 # RTC
 /sys/devices/platform/1000d000\.pwrap/.*/rtc/rtc0/wakeup[0-9]*(/.*)?             u:object_r:sysfs_wakeup:s0
 
 # Sensors
 /dev/shub_data_injection                                            u:object_r:shub_device:s0
 /dev/shub_sensorhub                                                 u:object_r:shub_device:s0
+/sys/devices/platform/shub/wakeup/wakeup[0-9]*(/.*)?                             u:object_r:sysfs_wakeup:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.sensors-service\.samsung-multihal         u:object_r:hal_sensors_default_exec:s0
 
 # Snap
