@@ -27,6 +27,13 @@
 # Hyper
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.hyper-service                     u:object_r:hal_hyper_default_exec:s0
 
+# I2C nodes
+/sys/devices/platform/1100f000\.i2c3/i2c-3/[^/]+/wakeup/wakeup[0-9]*(/.*)?       u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/11016000\.i2c5/i2c-5/[^/]+/wakeup/wakeup[0-9]*(/.*)?       u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/1100d000\.i2c6/i2c-6/[^/]+/wakeup/wakeup[0-9]*(/.*)?       u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/i2c@31/i2c-31/[^/]+/wakeup/wakeup[0-9]*(/.*)?              u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/1000d000\.pwrap/[^/]+/wakeup/wakeup[0-9]*(/.*)?            u:object_r:sysfs_wakeup:s0
+
 # Input
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.sysinput@[1-9]\.[0-9]-service     u:object_r:hal_sec_inputdev_default_exec:s0
 
