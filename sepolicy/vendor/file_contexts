@@ -74,6 +74,10 @@
 /dev/umts_ipc0                                                      u:object_r:radio_device:s0
 /dev/umts_ipc1                                                      u:object_r:radio_device:s0
 
+
+# RTC
+/sys/devices/platform/1000d000\.pwrap/.*/rtc/rtc0/wakeup[0-9]*(/.*)?             u:object_r:sysfs_wakeup:s0
+
 # Sensors
 /dev/shub_data_injection                                            u:object_r:shub_device:s0
 /dev/shub_sensorhub                                                 u:object_r:shub_device:s0
