@@ -5,8 +5,7 @@ BACKUP="${FILE}.bak"
 
 if [ ! -f "$FILE" ]; then
     echo "File not found: $FILE"
-    exit 1
-fi
+else
 
 echo "Patching $FILE ..."
 
@@ -19,8 +18,7 @@ fi
 # Check status of the patch
 if grep -q "RADIO_NOT_AVAILABLE || error == CommandException.Error.INTERNAL_ERR" "$FILE"; then
     echo "Patch already applied."
-    exit 0
-fi
+else
 
 # Apply the patch
 awk '
@@ -49,3 +47,5 @@ in_method && /^    }$/ {
 ' "$FILE" > "$FILE.tmp" && mv "$FILE.tmp" "$FILE"
 
 echo "Patch applied successfully!"
+fi
+fi
