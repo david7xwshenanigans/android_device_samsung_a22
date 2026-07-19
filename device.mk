@@ -159,10 +159,6 @@ PRODUCT_PACKAGES += \
     libz_stable.vendor \
     libprotobuf-cpp-lite-3.9.1-vendorcompat
 
-# Dumpstate
-PRODUCT_PACKAGES += \
-    android.hardware.dumpstate@1.1.vendor:64
-
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
