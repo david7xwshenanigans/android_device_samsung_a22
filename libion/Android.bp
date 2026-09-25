@@ -1,0 +1,26 @@
+// Self-contained functional ION userspace for the MTK mapper blob.
+//
+// Android 17 stubbed system/memory/libion (every entry point returns -1),
+// which makes allocator@4.0-service exit 1 and leaves no composer behind.
+// The upstream libion.legacy_impl soong flag cannot be used: its bp select
+// mixes a bool key with a string condition and fails bootstrap as soon as
+// the flag is set. So build the legacy sources (identical to the last
+// functional revision) here as a vendor-only module whose stem shadows
+// the system stub inside the vendor linker namespace.
+cc_library_shared {
+    name: "libion_mtk_legacy",
+    stem: "libion",
+    vendor: true,
+    srcs: [
+        "ion_legacy.c",
+    ],
+    cflags: [
+        "-Werror",
+    ],
+    local_include_dirs: [
+        "include",
+    ],
+    shared_libs: [
+        "liblog",
+    ],
+}
