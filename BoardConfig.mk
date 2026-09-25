@@ -189,6 +189,7 @@ BOARD_FSGEN_DISABLE := true
 # no composer -> blank screen). Our 4.14 kernel still provides /dev/ion,
 # so build the functional legacy implementation instead.
 SOONG_CONFIG_NAMESPACES += libion
+SOONG_CONFIG_libion := legacy_impl
 SOONG_CONFIG_libion_legacy_impl := true
 
 # VNDK
