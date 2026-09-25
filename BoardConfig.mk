@@ -184,6 +184,12 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/configs/vintf/frame
 # Graphics
 TARGET_USES_ION := true
 BOARD_FSGEN_DISABLE := true
+# Android 17 stubbed system/memory/libion (all entry points return -1),
+# which breaks the MTK mapper 4.0 blob (allocator@4.0-service exits 1,
+# no composer -> blank screen). Our 4.14 kernel still provides /dev/ion,
+# so build the functional legacy implementation instead.
+SOONG_CONFIG_NAMESPACES += libion
+SOONG_CONFIG_libion_legacy_impl := true
 
 # VNDK
 BOARD_VNDK_VERSION := current
