@@ -1,1 +1,7 @@
 get_prop(mtk_hal_bluetooth, zram_config_prop)
+
+allow mtk_hal_bluetooth mnt_vendor_file:dir search;
+
+allow mtk_hal_bluetooth efs_file:dir r_dir_perms;
+allow mtk_hal_bluetooth efs_file:file r_file_perms;
+allow mtk_hal_bluetooth efs_file:lnk_file r_file_perms;
