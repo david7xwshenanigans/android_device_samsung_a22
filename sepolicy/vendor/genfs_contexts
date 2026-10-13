@@ -9,6 +9,9 @@ genfscon sysfs /devices/platform/panel/panel_drv/backlight/panel/brightness     
 genfscon sysfs /devices/platform/panel/panel_drv/backlight/panel/max_brightness         u:object_r:sysfs_ski_display_writable:s0
 genfscon sysfs /devices/platform/panel/panel_drv/lcd/panel/lcd_type                     u:object_r:sysfs_ski_display_writable:s0
 
+# Flashlight
+genfscon sysfs /devices/virtual/camera/flash/rear_flash                                 u:object_r:sysfs_camera_writable:s0
+
 # IIO
 genfscon sysfs /bus/iio/devices                                                         u:object_r:sysfs_iio_devices:s0
 genfscon sysfs /devices/platform/shub/iio:device                                        u:object_r:sysfs_ss_writable:s0
