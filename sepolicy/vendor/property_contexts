@@ -6,6 +6,7 @@ vendor.bluetooth_nv_ver                 u:object_r:vendor_bluetooth_prop:s0
 vendor.bluetooth_fw_ver                 u:object_r:vendor_bluetooth_prop:s0
 
 # Camera
+ro.camera.sound.forced         u:object_r:vendor_camera_prop:s0
 ro.mtk_cam_stereo_camera_support        u:object_r:vendor_mtk_camera_prop:s0
 persist.vendor.camera.privapp.list      u:object_r:vendor_sec_camera_prop:s0
 vendor.npu.usr_drv.log_mask             u:object_r:vendor_sec_camera_prop:s0
@@ -26,6 +27,11 @@ ro.mtk_key_manager_support              u:object_r:vendor_mtk_default_prop:s0
 
 # Members
 persist.vendor.members.                 u:object_r:vendor_members_prop:s0
+
+# Misc
+ro.mtk_perf_fast_start_win     u:object_r:vendor_mtk_default_prop:s0
+ro.mtk_perf_response_time      u:object_r:vendor_mtk_default_prop:s0
+ro.mtk_perf_simple_start_win   u:object_r:vendor_mtk_default_prop:s0
 
 # Radio
 ro.vendor.multisim.                     u:object_r:vendor_radio_prop:s0
