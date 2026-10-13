@@ -377,6 +377,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/seccomp_policy,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy)
 
+# Set path for bt addr
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.bt.bdaddr_path=/mnt/vendor/efs/bluetooth/bt_addr
+
 # RenderScript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
