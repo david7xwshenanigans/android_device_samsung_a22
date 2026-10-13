@@ -1,5 +1,6 @@
 type sysfs_ski_sensor_writable, fs_type, sysfs_type;
 type sysfs_ski_touch_writable, fs_type, sysfs_type;
+type sysfs_camera_writable, fs_type, sysfs_type;
 type sysfs_ss_writable, fs_type, sysfs_type;
 type sysfs_sensor_writable, fs_type, sysfs_type;
 type sysfs_wifi_memdump, fs_type, sysfs_type;
