@@ -885,6 +885,7 @@ vendor/lib64/libsynaFpSensorTestNwd.so
 vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint@3.0.so
 
 # Firmware
+vendor/etc/nfc/libnfc-nxp_RF.conf
 vendor/firmware/aw8896_reg.bin
 vendor/firmware/aw8896_cfg.bin
 vendor/firmware/aw8896_fw_e.bin
