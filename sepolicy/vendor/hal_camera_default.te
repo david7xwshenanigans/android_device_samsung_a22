@@ -52,6 +52,7 @@ hal_server_domain(hal_camera_default, hal_mtk_bgs)
 hal_client_domain(hal_camera_default, hal_power)
 
 allow hal_camera_default hal_camera_hwservice:hwservice_manager { add find };
+allow hal_camera_default hal_configstore_ISurfaceFlingerConfigs:hwservice_manager find;
 allow hal_camera_default hal_graphics_mapper_hwservice:hwservice_manager find;
 allow hal_camera_default hal_graphics_allocator_hwservice:hwservice_manager find;
 
