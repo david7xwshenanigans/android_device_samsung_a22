@@ -17,3 +17,4 @@ vendor_public_prop(vendor_hwc_prop)
 vendor_restricted_prop(vendor_aware_available_prop);
 
 vendor_internal_prop(vendor_camera_prop);
+vendor_internal_prop(vendor_video_prop);
