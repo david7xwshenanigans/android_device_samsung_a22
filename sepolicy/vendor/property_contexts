@@ -37,6 +37,8 @@ ro.mtk_perf_simple_start_win   u:object_r:vendor_mtk_default_prop:s0
 ro.vendor.multisim.                     u:object_r:vendor_radio_prop:s0
 ro.multisim.                            u:object_r:vendor_radio_prop:s0
 ro.vendor.radio.                        u:object_r:vendor_radio_prop:s0
+ro.telephony.multi_sim_config           u:object_r:telephony_config_prop:s0
+persist.radio.dsds.enabled      u:object_r:radio_control_prop:s0
 
 # SMPS
 ro.smps.enable                          u:object_r:vendor_exported_system_prop:s0
