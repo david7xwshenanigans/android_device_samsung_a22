@@ -33,6 +33,9 @@ persist.vendor.members.                 u:object_r:vendor_members_prop:s0
 ro.mtk_perf_fast_start_win     u:object_r:vendor_mtk_default_prop:s0
 ro.mtk_perf_response_time      u:object_r:vendor_mtk_default_prop:s0
 ro.mtk_perf_simple_start_win   u:object_r:vendor_mtk_default_prop:s0
+gce.test                       u:object_r:vendor_video_prop:s0
+vilte.test                     u:object_r:vendor_video_prop:s0
+prepend.test                   u:object_r:vendor_video_prop:s0
 
 # Radio
 ro.vendor.multisim.                     u:object_r:vendor_radio_prop:s0
