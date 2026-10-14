@@ -1,1 +1,2 @@
 get_prop(ccci_mdinit, zram_config_prop)
+allow ccci_mdinit proc_ccci_dump:file getattr;
