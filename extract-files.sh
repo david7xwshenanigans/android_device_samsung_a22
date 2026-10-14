@@ -92,8 +92,21 @@ function blob_fixup {
         vendor/bin/hw/vendor.samsung.hardware.vibrator-service)
             "$PATCHELF" --replace-needed "android.hardware.vibrator-V2-ndk_platform.so" "android.hardware.vibrator-V2-ndk.so" "${2}"
             ;;
+        # fix SMS sending by passing null RilData to RequestComplete inside
+        # SmsManager::OnGetSmscAddressDone (file offset 0x22f8d0), so the framework
+        # sends an empty SMSC which forces the radio uses the SIM's default SMSC instead
         vendor/lib64/vendor.samsung.hardware.vibrator-V5-ndk_platform.so)
             "$PATCHELF" --replace-needed "android.hardware.vibrator-V2-ndk_platform.so" "android.hardware.vibrator-V2-ndk.so" "${2}"
+            ;;
+                vendor/lib64/libsec-ril.so)
+            OLD="800e40f9820c8052e10316aae30315aa24008052"
+            NEW="800e40f9820c8052e10316aae3031faa24008052"
+            if ! xxd -p -c0 "${2}" | grep -q "${OLD}"; then
+                echo "libsec-ril.so: SMSC patch pattern not found, blob changed?" >&2
+                exit 1
+            fi
+            xxd -p -c0 "${2}" | sed "s/${OLD}/${NEW}/g" | xxd -r -p > "${2}".patched
+            mv "${2}".patched "${2}"
             ;;
     esac
 }
