@@ -277,7 +277,19 @@ function blob_fixup() {
             #####################################################################
             # Codec2: End Codec2 Patchelf
             #####################################################################
-
+        # fix SMS sending by passing null RilData to RequestComplete inside
+        # SmsManager::OnGetSmscAddressDone (file offset 0x22f8d0), so the framework
+        # sends an empty SMSC which forces the radio uses the SIM's default SMSC instead
+            vendor/lib64/libsec-ril.so)
+            OLD="800e40f9820c8052e10316aae30315aa24008052"
+            NEW="800e40f9820c8052e10316aae3031faa24008052"
+            if ! xxd -p -c0 "${2}" | grep -q "${OLD}"; then
+                echo "libsec-ril.so: SMSC patch pattern not found, blob changed?" >&2
+                exit 1
+            fi
+            xxd -p -c0 "${2}" | sed "s/${OLD}/${NEW}/g" | xxd -r -p > "${2}".patched
+            mv "${2}".patched "${2}"
+            ;;
     esac
 }
 # Initialize the helper
