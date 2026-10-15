@@ -58,6 +58,7 @@ allow hal_camera_default hal_graphics_allocator_hwservice:hwservice_manager find
 
 set_prop(hal_camera_default, sec_camera_prop)
 get_prop(hal_camera_default, vendor_mtk_default_prop)
+get_prop(hal_camera_default, vendor_mtk_emcamera_prop)
 get_prop(hal_camera_default, vendor_sec_camera_prop)
 set_prop(hal_camera_default, vendor_camera_prop)
 get_prop(hal_camera_default, vendor_camera_prop)
