@@ -331,8 +331,7 @@ PRODUCT_PACKAGES += \
     libjsoncpp.vendor \
     librilutils \
     libxml2.vendor \
-    libprotobuf-cpp-full-3.9.1-vendorcompat \
-    secril_config_svc
+    libprotobuf-cpp-full-3.9.1-vendorcompat
 
 # Radio (IMS)
 PRODUCT_BOOT_JARS += \
