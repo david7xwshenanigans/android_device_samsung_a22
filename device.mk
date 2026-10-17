@@ -438,6 +438,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.bt.bdaddr_path=/mnt/vendor/efs/bluetooth/bt_addr
 
+# Set UICC enablement off for slot 1
+PRODUCT_SYSTEM_PROPERTIES += persist.radio.uicc.enablement1=0
+
 # RenderScript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl

@@ -229,7 +229,6 @@ persist.radio.dsds.enabled=true
 persist.vendor.radio.data_concurrency=false
 persist.vendor.radio.multisim_switch_support=true
 persist.radio.multisim.config=dsds
-persist.radio.uicc.enablement1=0
 ro.telephony.default_cdma_sub=0
 ro.telephony.multi_sim_config=dsds
 ro.vendor.epdg.support=true
