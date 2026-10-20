@@ -1,5 +1,7 @@
 allow mtk_hal_power hal_camera_default:dir { getattr search };
 allow mtk_hal_power hal_camera_default:file r_file_perms;
 allow mtk_hal_power latency_device:chr_file rw_file_perms;
+allow mtk_hal_power sysfs_sec:file rw_file_perms;
+allow mtk_hal_power sysfs_tsp_enabled:file rw_file_perms;
 
 get_prop(mtk_hal_power, vendor_thermal_prop)
