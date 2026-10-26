@@ -44,6 +44,8 @@ allow hal_power_default sysfs_fpsgo:file rw_file_perms;
 
 allow hal_power_default sysfs_ski_touch_writable:dir r_dir_perms;
 allow hal_power_default sysfs_ski_touch_writable:file rw_file_perms;
+allow hal_power_default sysfs_sec:file rw_file_perms;
+allow hal_power_default sysfs_tsp_enabled:file rw_file_perms;
 allow hal_power_default sysfs_battery:dir r_dir_perms;
 allow hal_power_default sysfs_battery:file rw_file_perms;
 allow hal_power_default sysfs_gpu:dir r_dir_perms;
