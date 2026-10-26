@@ -1,6 +1,14 @@
 soong_namespace {
 }
 
+cc_library_static {
+    name: "libpower-ext",
+    defaults: ["android.hardware.power-ndk_shared"],
+    vendor: true,
+    shared_libs: ["libbase"],
+    srcs: ["power/power-ext.cpp"],
+}
+
 prebuilt_hidl_interfaces {
     name: "hidl_samsung_nfc_interface",
     interfaces: [

@@ -2,16 +2,23 @@
 #include <android-base/file.h>
 
 namespace aidl {
-namespace android {
+namespace google {
 namespace hardware {
 namespace power {
 namespace impl {
-namespace mediatek {
+namespace pixel {
+
+using ::aidl::android::hardware::power::Mode;
 
 bool isDeviceSpecificModeSupported(Mode type, bool* ret) {
-    if (type != Mode::DOUBLE_TAP_TO_WAKE) return false;
-    *ret = true;
-    return true;
+    switch (type) {
+        case Mode::DOUBLE_TAP_TO_WAKE:
+        case Mode::INTERACTIVE:
+            *ret = true;
+            return true;
+        default:
+            return false;
+    }
 }
 
 bool setDeviceSpecificMode(Mode type, bool enabled) {
