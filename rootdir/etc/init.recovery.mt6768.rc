@@ -1,5 +1,6 @@
 on early-init
     write /sys/module/musb_hdrc/parameters/kernel_init_done 1
+    setprop debug.ld.all ""
 
 on init
     setprop sys.usb.configfs 1
