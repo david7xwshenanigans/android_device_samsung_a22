@@ -865,6 +865,8 @@ on post-fs-data
     chown system /sys/class/input/input3/delay
     chown system /sys/class/input/input3/wake
     chown system /sys/class/input/input3/offsets
+    chown system system /sys/class/sec/tsp/input/enabled
+    chmod 0666 /sys/class/sec/tsp/input/enabled
     chmod 0222 /sys/devices/virtual/sec/tsp/cmd
     chown system /sys/class/input/input4/enable
     chown system /sys/class/input/input4/delay
