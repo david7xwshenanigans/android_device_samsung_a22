@@ -41,10 +41,12 @@ bool setDeviceSpecificMode(Mode type, bool enabled) {
 
     if (type == Mode::INTERACTIVE) {
         writeNode("/sys/class/sec/tsp/input/enabled", enabled ? "1" : "0");
+        return true;
     }
 
     return false;
 }
+
 
 }
 }
