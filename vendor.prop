@@ -170,7 +170,7 @@ ro.vendor.mtk_nn_support=1
 
 # NFC
 ro.camera.notify_nfc=1
-ro.vendor.nfc.feature.chipname=SLSI
+ro.vendor.nfc.feature.chipname=NXP_SN100U
 ro.vendor.nfc.info.antpos=16
 ro.vendor.nfc.support.advancedsetting=false
 ro.vendor.nfc.support.autoselect=true
