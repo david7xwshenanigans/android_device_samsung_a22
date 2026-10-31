@@ -1,0 +1,3 @@
+set_prop(recovery, adbd_recovery_prop)
+set_prop(recovery, ctl_adbd_prop)
+get_prop(adbd, adbd_recovery_prop)

@@ -70,6 +70,8 @@ persist.ims.mock.                       u:object_r:exported_radio_prop:s0
 persist.ims.pctmode                     u:object_r:exported_radio_prop:s0
 persist.ims.salescode.sve               u:object_r:exported_radio_prop:s0
 
+# Recovery
+ro.adb.secure.recovery 			u:object_r:adbd_recovery_prop:s0 exact bool
 # Security
 ro.security.                            u:object_r:exported_system_prop:s0
 
