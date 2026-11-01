@@ -440,6 +440,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Set UICC enablement off for slot 1
 PRODUCT_SYSTEM_PROPERTIES += persist.radio.uicc.enablement1=0
+PRODUCT_SYSTEM_PROPERTIES += persist.radio.uicc.enablement0=0
 
 # RenderScript
 PRODUCT_PACKAGES += \
